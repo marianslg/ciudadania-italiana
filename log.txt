@@ -38949,3 +38949,1843 @@
 2024-10-02 08:27:39 - Sin turnos
 2024-10-02 08:27:39 - Returning process
 2024-10-02 08:27:39 - Next execution time: 2024-10-02 08:28:13.583238
+2024-10-11 17:58:18 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 17:58:18 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 17:58:26 - Returning go_to_url
+2024-10-11 17:58:26 - Calling login <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 17:58:31 - Returning login
+2024-10-11 17:58:31 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 17:58:33 - Returning go_to_url
+2024-10-11 17:58:33 - Sin turnos
+2024-10-11 17:58:33 - Returning process
+2024-10-11 17:58:33 - Next execution time: 2024-10-11 17:58:43.776955
+2024-10-11 17:58:43 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 17:58:43 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 17:58:49 - Returning go_to_url
+2024-10-11 17:58:49 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 17:58:52 - Returning go_to_url
+2024-10-11 17:58:53 - Returning process
+2024-10-11 17:58:53 - Next execution time: 2024-10-11 17:59:28.221433
+2024-10-11 17:59:28 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 17:59:28 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 17:59:33 - Returning go_to_url
+2024-10-11 17:59:33 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 17:59:37 - Returning go_to_url
+2024-10-11 17:59:38 - Returning process
+2024-10-11 17:59:38 - Next execution time: 2024-10-11 17:59:59.264723
+2024-10-11 17:59:59 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 17:59:59 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:00:06 - Returning go_to_url
+2024-10-11 18:00:07 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 18:05:07 - Returning go_to_url
+2024-10-11 18:05:07 - Sin turnos
+2024-10-11 18:05:07 - Returning process
+2024-10-11 18:05:07 - Next execution time: 2024-10-11 18:05:18.068871
+2024-10-11 18:05:18 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 18:05:18 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:05:24 - Returning go_to_url
+2024-10-11 18:05:24 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 18:10:00 - Returning go_to_url
+2024-10-11 18:10:05 - Returning process
+2024-10-11 18:10:05 - Next execution time: 2024-10-11 18:10:44.051776
+2024-10-11 18:10:44 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 18:10:44 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:10:48 - Returning go_to_url
+2024-10-11 18:10:48 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 18:10:52 - Returning go_to_url
+2024-10-11 18:10:52 - Returning process
+2024-10-11 18:10:52 - Next execution time: 2024-10-11 18:11:10.759834
+2024-10-11 18:11:10 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 18:11:10 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:11:15 - Returning go_to_url
+2024-10-11 18:11:15 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 18:11:20 - Returning go_to_url
+2024-10-11 18:11:20 - Returning process
+2024-10-11 18:11:20 - Next execution time: 2024-10-11 18:11:47.626471
+2024-10-11 18:11:47 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 18:11:47 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:11:54 - Returning go_to_url
+2024-10-11 18:11:54 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 18:16:54 - Returning go_to_url
+2024-10-11 18:16:54 - Sin turnos
+2024-10-11 18:16:54 - Returning process
+2024-10-11 18:16:54 - Next execution time: 2024-10-11 18:17:24.101628
+2024-10-11 18:17:24 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 18:17:24 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:17:30 - Returning go_to_url
+2024-10-11 18:17:30 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 18:21:25 - Returning go_to_url
+2024-10-11 18:21:25 - Returning process
+2024-10-11 18:21:25 - Next execution time: 2024-10-11 18:21:58.579039
+2024-10-11 18:21:58 - Calling process <driver.SeleniumDriver object at 0x105c5df10>
+2024-10-11 18:21:58 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:22:03 - Returning go_to_url
+2024-10-11 18:22:03 - Calling go_to_url <driver.SeleniumDriver object at 0x105c5df10>, https://prenotami.esteri.it/Services/Booking/224
+2024-10-11 18:22:08 - Returning go_to_url
+2024-10-11 18:22:08 - Returning process
+2024-10-11 18:22:08 - Next execution time: 2024-10-11 18:22:21.975997
+2024-10-11 18:34:02 - Calling process2 <driver.SeleniumDriver object at 0x106422a50>
+2024-10-11 18:34:02 - Calling go_to_url <driver.SeleniumDriver object at 0x106422a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:34:11 - Returning go_to_url
+2024-10-11 18:34:12 - Calling login <driver.SeleniumDriver object at 0x106422a50>
+2024-10-11 18:34:16 - Returning login
+2024-10-11 18:34:16 - Voy a dormir 1541.274231 segundos
+2024-10-11 18:34:40 - Calling process2 <driver.SeleniumDriver object at 0x100fc2ae0>
+2024-10-11 18:34:40 - Calling go_to_url <driver.SeleniumDriver object at 0x100fc2ae0>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:34:56 - Returning go_to_url
+2024-10-11 18:34:56 - Calling login <driver.SeleniumDriver object at 0x100fc2ae0>
+2024-10-11 18:34:57 - Returning login
+2024-10-11 18:36:13 - Calling process2 <driver.SeleniumDriver object at 0x10331aba0>
+2024-10-11 18:36:13 - Calling go_to_url <driver.SeleniumDriver object at 0x10331aba0>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:36:15 - Returning go_to_url
+2024-10-11 18:36:22 - Calling change_tab <driver.SeleniumDriver object at 0x10331aba0>, 0
+2024-10-11 18:36:22 - Returning change_tab
+2024-10-11 18:36:24 - Calling change_tab <driver.SeleniumDriver object at 0x10331aba0>, 1
+2024-10-11 18:36:24 - Returning change_tab
+2024-10-11 18:38:50 - Calling process2 <driver.SeleniumDriver object at 0x101a16cf0>
+2024-10-11 18:38:50 - Calling go_to_url <driver.SeleniumDriver object at 0x101a16cf0>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:38:51 - Returning go_to_url
+2024-10-11 18:38:59 - Calling change_tab <driver.SeleniumDriver object at 0x101a16cf0>, 1
+2024-10-11 18:38:59 - Returning change_tab
+2024-10-11 18:40:04 - Calling process2 <driver.SeleniumDriver object at 0x1020e7020>
+2024-10-11 18:40:04 - Calling go_to_url <driver.SeleniumDriver object at 0x1020e7020>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:40:12 - Returning go_to_url
+2024-10-11 18:40:12 - Calling login <driver.SeleniumDriver object at 0x1020e7020>
+2024-10-11 18:40:20 - Returning login
+2024-10-11 18:40:21 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:40:21 - Returning change_tab
+2024-10-11 18:42:12 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:42:12 - Returning change_tab
+2024-10-11 18:42:13 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:42:13 - Returning change_tab
+2024-10-11 18:42:15 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:42:15 - Returning change_tab
+2024-10-11 18:42:26 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:42:26 - Returning change_tab
+2024-10-11 18:42:27 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:42:27 - Returning change_tab
+2024-10-11 18:42:28 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:42:28 - Returning change_tab
+2024-10-11 18:42:29 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:42:29 - Returning change_tab
+2024-10-11 18:42:30 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:42:30 - Returning change_tab
+2024-10-11 18:42:31 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:42:31 - Returning change_tab
+2024-10-11 18:42:32 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:42:32 - Returning change_tab
+2024-10-11 18:43:17 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:43:17 - Returning change_tab
+2024-10-11 18:43:18 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:43:18 - Returning change_tab
+2024-10-11 18:43:19 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:43:19 - Returning change_tab
+2024-10-11 18:43:20 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:43:20 - Returning change_tab
+2024-10-11 18:43:21 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:43:21 - Returning change_tab
+2024-10-11 18:43:22 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:43:22 - Returning change_tab
+2024-10-11 18:43:23 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:43:23 - Returning change_tab
+2024-10-11 18:43:24 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:43:24 - Returning change_tab
+2024-10-11 18:43:26 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:43:26 - Returning change_tab
+2024-10-11 18:43:27 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:43:27 - Returning change_tab
+2024-10-11 18:43:28 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:43:28 - Returning change_tab
+2024-10-11 18:43:29 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:43:29 - Returning change_tab
+2024-10-11 18:43:30 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:43:30 - Returning change_tab
+2024-10-11 18:43:31 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:43:31 - Returning change_tab
+2024-10-11 18:43:32 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:43:32 - Returning change_tab
+2024-10-11 18:43:33 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:43:33 - Returning change_tab
+2024-10-11 18:43:34 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:43:34 - Returning change_tab
+2024-10-11 18:43:35 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:43:35 - Returning change_tab
+2024-10-11 18:43:36 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:43:36 - Returning change_tab
+2024-10-11 18:43:37 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:43:37 - Returning change_tab
+2024-10-11 18:43:38 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:43:38 - Returning change_tab
+2024-10-11 18:43:39 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:43:39 - Returning change_tab
+2024-10-11 18:43:40 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:43:40 - Returning change_tab
+2024-10-11 18:43:41 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:43:41 - Returning change_tab
+2024-10-11 18:43:42 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:43:42 - Returning change_tab
+2024-10-11 18:43:43 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:43:43 - Returning change_tab
+2024-10-11 18:43:44 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:43:44 - Returning change_tab
+2024-10-11 18:43:45 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:43:45 - Returning change_tab
+2024-10-11 18:43:46 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:43:46 - Returning change_tab
+2024-10-11 18:43:47 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:43:47 - Returning change_tab
+2024-10-11 18:43:48 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:43:48 - Returning change_tab
+2024-10-11 18:43:49 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:43:49 - Returning change_tab
+2024-10-11 18:43:50 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:43:50 - Returning change_tab
+2024-10-11 18:43:51 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:43:51 - Returning change_tab
+2024-10-11 18:43:52 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:43:52 - Returning change_tab
+2024-10-11 18:43:53 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:43:53 - Returning change_tab
+2024-10-11 18:43:54 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:43:54 - Returning change_tab
+2024-10-11 18:43:55 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:43:55 - Returning change_tab
+2024-10-11 18:43:56 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:43:56 - Returning change_tab
+2024-10-11 18:43:57 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:43:57 - Returning change_tab
+2024-10-11 18:43:58 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:43:58 - Returning change_tab
+2024-10-11 18:43:59 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:43:59 - Returning change_tab
+2024-10-11 18:44:00 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:44:00 - Returning change_tab
+2024-10-11 18:44:01 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:44:01 - Returning change_tab
+2024-10-11 18:44:02 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:44:02 - Returning change_tab
+2024-10-11 18:44:03 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:44:03 - Returning change_tab
+2024-10-11 18:44:04 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:44:04 - Returning change_tab
+2024-10-11 18:44:05 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:44:05 - Returning change_tab
+2024-10-11 18:44:06 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:44:06 - Returning change_tab
+2024-10-11 18:44:07 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:44:07 - Returning change_tab
+2024-10-11 18:44:08 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:44:08 - Returning change_tab
+2024-10-11 18:44:09 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:44:09 - Returning change_tab
+2024-10-11 18:44:10 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:44:10 - Returning change_tab
+2024-10-11 18:44:11 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:44:11 - Returning change_tab
+2024-10-11 18:44:12 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:44:12 - Returning change_tab
+2024-10-11 18:44:13 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:44:13 - Returning change_tab
+2024-10-11 18:44:14 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:44:14 - Returning change_tab
+2024-10-11 18:44:15 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:44:15 - Returning change_tab
+2024-10-11 18:44:16 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:44:16 - Returning change_tab
+2024-10-11 18:44:17 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:44:17 - Returning change_tab
+2024-10-11 18:44:18 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:44:18 - Returning change_tab
+2024-10-11 18:44:19 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:44:19 - Returning change_tab
+2024-10-11 18:44:20 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:44:20 - Returning change_tab
+2024-10-11 18:44:21 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:44:21 - Returning change_tab
+2024-10-11 18:44:23 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:44:23 - Returning change_tab
+2024-10-11 18:44:24 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:44:24 - Returning change_tab
+2024-10-11 18:44:25 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:44:25 - Returning change_tab
+2024-10-11 18:44:26 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:44:26 - Returning change_tab
+2024-10-11 18:44:27 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:44:27 - Returning change_tab
+2024-10-11 18:44:28 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:44:28 - Returning change_tab
+2024-10-11 18:44:29 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:44:29 - Returning change_tab
+2024-10-11 18:44:30 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:44:30 - Returning change_tab
+2024-10-11 18:44:31 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:44:31 - Returning change_tab
+2024-10-11 18:44:32 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:44:32 - Returning change_tab
+2024-10-11 18:44:33 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:44:33 - Returning change_tab
+2024-10-11 18:44:34 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:44:34 - Returning change_tab
+2024-10-11 18:44:35 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:44:35 - Returning change_tab
+2024-10-11 18:44:36 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:44:36 - Returning change_tab
+2024-10-11 18:44:37 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:44:37 - Returning change_tab
+2024-10-11 18:44:38 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:44:38 - Returning change_tab
+2024-10-11 18:44:39 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:44:39 - Returning change_tab
+2024-10-11 18:44:40 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:44:40 - Returning change_tab
+2024-10-11 18:44:41 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:44:41 - Returning change_tab
+2024-10-11 18:44:42 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:44:42 - Returning change_tab
+2024-10-11 18:44:43 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:44:43 - Returning change_tab
+2024-10-11 18:44:44 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:44:44 - Returning change_tab
+2024-10-11 18:44:45 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:44:45 - Returning change_tab
+2024-10-11 18:44:46 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:44:46 - Returning change_tab
+2024-10-11 18:44:47 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:44:47 - Returning change_tab
+2024-10-11 18:44:48 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:44:48 - Returning change_tab
+2024-10-11 18:44:49 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:44:49 - Returning change_tab
+2024-10-11 18:44:50 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:44:50 - Returning change_tab
+2024-10-11 18:44:51 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:44:51 - Returning change_tab
+2024-10-11 18:44:52 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:44:52 - Returning change_tab
+2024-10-11 18:44:53 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:44:53 - Returning change_tab
+2024-10-11 18:44:54 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:44:54 - Returning change_tab
+2024-10-11 18:44:55 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:44:55 - Returning change_tab
+2024-10-11 18:44:56 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:44:56 - Returning change_tab
+2024-10-11 18:44:57 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:44:57 - Returning change_tab
+2024-10-11 18:44:58 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:44:58 - Returning change_tab
+2024-10-11 18:44:59 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:44:59 - Returning change_tab
+2024-10-11 18:45:00 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:45:00 - Returning change_tab
+2024-10-11 18:45:01 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:45:01 - Returning change_tab
+2024-10-11 18:45:02 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:45:02 - Returning change_tab
+2024-10-11 18:45:03 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:45:03 - Returning change_tab
+2024-10-11 18:45:04 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:45:04 - Returning change_tab
+2024-10-11 18:45:05 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:45:05 - Returning change_tab
+2024-10-11 18:45:06 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:45:06 - Returning change_tab
+2024-10-11 18:45:07 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:45:07 - Returning change_tab
+2024-10-11 18:45:08 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:45:08 - Returning change_tab
+2024-10-11 18:45:09 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:45:09 - Returning change_tab
+2024-10-11 18:45:10 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:45:10 - Returning change_tab
+2024-10-11 18:45:11 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:45:11 - Returning change_tab
+2024-10-11 18:45:12 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:45:12 - Returning change_tab
+2024-10-11 18:45:13 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:45:13 - Returning change_tab
+2024-10-11 18:45:14 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:45:14 - Returning change_tab
+2024-10-11 18:45:15 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:45:15 - Returning change_tab
+2024-10-11 18:45:16 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:45:16 - Returning change_tab
+2024-10-11 18:45:17 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:45:17 - Returning change_tab
+2024-10-11 18:45:18 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:45:18 - Returning change_tab
+2024-10-11 18:45:19 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:45:19 - Returning change_tab
+2024-10-11 18:45:20 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:45:20 - Returning change_tab
+2024-10-11 18:45:21 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:45:21 - Returning change_tab
+2024-10-11 18:45:22 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:45:22 - Returning change_tab
+2024-10-11 18:45:23 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:45:23 - Returning change_tab
+2024-10-11 18:45:24 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:45:24 - Returning change_tab
+2024-10-11 18:45:25 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:45:25 - Returning change_tab
+2024-10-11 18:45:26 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:45:26 - Returning change_tab
+2024-10-11 18:45:27 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:45:27 - Returning change_tab
+2024-10-11 18:45:28 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:45:28 - Returning change_tab
+2024-10-11 18:45:29 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:45:29 - Returning change_tab
+2024-10-11 18:45:30 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:45:30 - Returning change_tab
+2024-10-11 18:45:31 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:45:31 - Returning change_tab
+2024-10-11 18:45:32 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:45:32 - Returning change_tab
+2024-10-11 18:45:33 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:45:33 - Returning change_tab
+2024-10-11 18:45:34 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:45:34 - Returning change_tab
+2024-10-11 18:45:35 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:45:35 - Returning change_tab
+2024-10-11 18:45:36 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:45:36 - Returning change_tab
+2024-10-11 18:45:37 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:45:37 - Returning change_tab
+2024-10-11 18:45:38 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:45:38 - Returning change_tab
+2024-10-11 18:45:39 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:45:39 - Returning change_tab
+2024-10-11 18:45:40 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:45:40 - Returning change_tab
+2024-10-11 18:45:41 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:45:41 - Returning change_tab
+2024-10-11 18:45:42 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:45:42 - Returning change_tab
+2024-10-11 18:45:43 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:45:43 - Returning change_tab
+2024-10-11 18:45:44 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:45:44 - Returning change_tab
+2024-10-11 18:45:45 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:45:45 - Returning change_tab
+2024-10-11 18:45:46 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:45:46 - Returning change_tab
+2024-10-11 18:45:47 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:45:47 - Returning change_tab
+2024-10-11 18:45:48 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:45:48 - Returning change_tab
+2024-10-11 18:45:49 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:45:49 - Returning change_tab
+2024-10-11 18:45:50 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:45:50 - Returning change_tab
+2024-10-11 18:45:51 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:45:51 - Returning change_tab
+2024-10-11 18:45:52 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:45:52 - Returning change_tab
+2024-10-11 18:45:53 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:45:53 - Returning change_tab
+2024-10-11 18:45:54 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:45:54 - Returning change_tab
+2024-10-11 18:45:55 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:45:55 - Returning change_tab
+2024-10-11 18:45:56 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:45:56 - Returning change_tab
+2024-10-11 18:45:57 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:45:57 - Returning change_tab
+2024-10-11 18:45:58 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:45:58 - Returning change_tab
+2024-10-11 18:45:59 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:45:59 - Returning change_tab
+2024-10-11 18:46:00 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:46:00 - Returning change_tab
+2024-10-11 18:46:01 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:46:01 - Returning change_tab
+2024-10-11 18:46:02 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:46:02 - Returning change_tab
+2024-10-11 18:46:03 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:46:03 - Returning change_tab
+2024-10-11 18:46:04 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:46:04 - Returning change_tab
+2024-10-11 18:46:05 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:46:05 - Returning change_tab
+2024-10-11 18:46:06 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:46:06 - Returning change_tab
+2024-10-11 18:46:07 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:46:07 - Returning change_tab
+2024-10-11 18:46:08 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:46:08 - Returning change_tab
+2024-10-11 18:46:09 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:46:09 - Returning change_tab
+2024-10-11 18:46:10 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:46:10 - Returning change_tab
+2024-10-11 18:46:11 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:46:11 - Returning change_tab
+2024-10-11 18:46:12 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:46:12 - Returning change_tab
+2024-10-11 18:46:13 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:46:13 - Returning change_tab
+2024-10-11 18:46:14 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:46:14 - Returning change_tab
+2024-10-11 18:46:15 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:46:15 - Returning change_tab
+2024-10-11 18:46:16 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:46:16 - Returning change_tab
+2024-10-11 18:46:17 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:46:17 - Returning change_tab
+2024-10-11 18:46:18 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:46:18 - Returning change_tab
+2024-10-11 18:46:19 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:46:19 - Returning change_tab
+2024-10-11 18:46:20 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:46:20 - Returning change_tab
+2024-10-11 18:46:21 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:46:21 - Returning change_tab
+2024-10-11 18:46:22 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:46:22 - Returning change_tab
+2024-10-11 18:46:23 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:46:23 - Returning change_tab
+2024-10-11 18:46:24 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:46:24 - Returning change_tab
+2024-10-11 18:46:25 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:46:25 - Returning change_tab
+2024-10-11 18:46:26 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:46:26 - Returning change_tab
+2024-10-11 18:46:27 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:46:27 - Returning change_tab
+2024-10-11 18:46:28 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:46:28 - Returning change_tab
+2024-10-11 18:46:29 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:46:29 - Returning change_tab
+2024-10-11 18:46:30 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:46:30 - Returning change_tab
+2024-10-11 18:46:31 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:46:31 - Returning change_tab
+2024-10-11 18:46:32 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:46:32 - Returning change_tab
+2024-10-11 18:46:33 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:46:33 - Returning change_tab
+2024-10-11 18:46:34 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:46:34 - Returning change_tab
+2024-10-11 18:46:35 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:46:35 - Returning change_tab
+2024-10-11 18:46:36 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:46:36 - Returning change_tab
+2024-10-11 18:46:37 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:46:37 - Returning change_tab
+2024-10-11 18:46:38 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:46:38 - Returning change_tab
+2024-10-11 18:46:39 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:46:39 - Returning change_tab
+2024-10-11 18:46:40 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:46:40 - Returning change_tab
+2024-10-11 18:46:41 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:46:41 - Returning change_tab
+2024-10-11 18:46:42 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:46:43 - Returning change_tab
+2024-10-11 18:46:44 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:46:44 - Returning change_tab
+2024-10-11 18:46:45 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:46:45 - Returning change_tab
+2024-10-11 18:46:46 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:46:46 - Returning change_tab
+2024-10-11 18:46:47 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:46:47 - Returning change_tab
+2024-10-11 18:46:48 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:46:48 - Returning change_tab
+2024-10-11 18:46:49 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:46:49 - Returning change_tab
+2024-10-11 18:46:50 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:46:50 - Returning change_tab
+2024-10-11 18:46:51 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:46:51 - Returning change_tab
+2024-10-11 18:46:52 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:46:52 - Returning change_tab
+2024-10-11 18:46:53 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:46:53 - Returning change_tab
+2024-10-11 18:46:54 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 6
+2024-10-11 18:46:54 - Returning change_tab
+2024-10-11 18:46:55 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 7
+2024-10-11 18:46:55 - Returning change_tab
+2024-10-11 18:46:56 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 8
+2024-10-11 18:46:56 - Returning change_tab
+2024-10-11 18:46:57 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 9
+2024-10-11 18:46:57 - Returning change_tab
+2024-10-11 18:46:58 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 10
+2024-10-11 18:46:58 - Returning change_tab
+2024-10-11 18:46:59 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 1
+2024-10-11 18:46:59 - Returning change_tab
+2024-10-11 18:47:00 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 2
+2024-10-11 18:47:00 - Returning change_tab
+2024-10-11 18:47:01 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 3
+2024-10-11 18:47:01 - Returning change_tab
+2024-10-11 18:47:02 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 4
+2024-10-11 18:47:02 - Returning change_tab
+2024-10-11 18:47:03 - Calling change_tab <driver.SeleniumDriver object at 0x1020e7020>, 5
+2024-10-11 18:47:03 - Returning change_tab
+2024-10-11 18:47:05 - Calling process2 <driver.SeleniumDriver object at 0x10573ea50>
+2024-10-11 18:47:05 - Calling go_to_url <driver.SeleniumDriver object at 0x10573ea50>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:47:15 - Returning go_to_url
+2024-10-11 18:47:15 - Calling login <driver.SeleniumDriver object at 0x10573ea50>
+2024-10-11 18:47:23 - Returning login
+2024-10-11 18:48:26 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 18:48:26 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 18:48:27 - Returning go_to_url
+2024-10-11 18:48:39 - Calling login <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 18:48:46 - Returning login
+2024-10-11 18:48:46 - Voy a dormir 671.121129 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:09:58 - Returning process2
+2024-10-11 19:09:58 - Next execution time: 2024-10-11 19:10:18.387224
+2024-10-11 19:10:18 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:10:18 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:10:18 - Returning go_to_url
+2024-10-11 19:10:18 - Voy a dormir -620.400415 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:10:18 - Returning process2
+2024-10-11 19:10:18 - Next execution time: 2024-10-11 19:10:38.400707
+2024-10-11 19:10:38 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:10:38 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:10:38 - Returning go_to_url
+2024-10-11 19:10:38 - Voy a dormir -640.407692 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:10:38 - Returning process2
+2024-10-11 19:10:38 - Next execution time: 2024-10-11 19:11:04.408020
+2024-10-11 19:11:04 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:11:04 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:11:04 - Returning go_to_url
+2024-10-11 19:11:04 - Voy a dormir -666.417872 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:11:04 - Returning process2
+2024-10-11 19:11:04 - Next execution time: 2024-10-11 19:11:24.418563
+2024-10-11 19:11:24 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:11:24 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:11:24 - Returning go_to_url
+2024-10-11 19:11:24 - Voy a dormir -686.429206 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:11:24 - Returning process2
+2024-10-11 19:11:24 - Next execution time: 2024-10-11 19:11:51.429818
+2024-10-11 19:11:51 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:11:51 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:11:51 - Returning go_to_url
+2024-10-11 19:11:51 - Voy a dormir -713.441186 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:11:51 - Returning process2
+2024-10-11 19:11:51 - Next execution time: 2024-10-11 19:12:06.441808
+2024-10-11 19:12:06 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:12:06 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:12:06 - Returning go_to_url
+2024-10-11 19:12:06 - Voy a dormir -728.451619 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:12:06 - Returning process2
+2024-10-11 19:12:06 - Next execution time: 2024-10-11 19:12:34.451848
+2024-10-11 19:12:34 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:12:34 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:12:34 - Returning go_to_url
+2024-10-11 19:12:34 - Voy a dormir -756.457544 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:12:34 - Returning process2
+2024-10-11 19:12:34 - Next execution time: 2024-10-11 19:13:08.457901
+2024-10-11 19:13:08 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:13:08 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:13:08 - Returning go_to_url
+2024-10-11 19:13:08 - Voy a dormir -790.469819 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:13:08 - Returning process2
+2024-10-11 19:13:08 - Next execution time: 2024-10-11 19:13:21.470254
+2024-10-11 19:13:21 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:13:21 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:13:21 - Returning go_to_url
+2024-10-11 19:13:21 - Voy a dormir -803.482297 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:13:21 - Returning process2
+2024-10-11 19:13:21 - Next execution time: 2024-10-11 19:13:41.482927
+2024-10-11 19:13:41 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:13:41 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:13:41 - Returning go_to_url
+2024-10-11 19:13:41 - Voy a dormir -823.494388 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:13:41 - Returning process2
+2024-10-11 19:13:41 - Next execution time: 2024-10-11 19:14:03.494704
+2024-10-11 19:14:03 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:14:03 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:14:03 - Returning go_to_url
+2024-10-11 19:14:03 - Voy a dormir -845.506332 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:14:03 - Returning process2
+2024-10-11 19:14:03 - Next execution time: 2024-10-11 19:14:42.506571
+2024-10-11 19:14:42 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:14:42 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:14:42 - Returning go_to_url
+2024-10-11 19:14:42 - Voy a dormir -884.519155 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:14:42 - Returning process2
+2024-10-11 19:14:42 - Next execution time: 2024-10-11 19:15:10.519747
+2024-10-11 19:15:10 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:15:10 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:15:10 - Returning go_to_url
+2024-10-11 19:15:10 - Voy a dormir -912.531532 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:15:10 - Returning process2
+2024-10-11 19:15:10 - Next execution time: 2024-10-11 19:15:47.531840
+2024-10-11 19:15:47 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:15:47 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:15:47 - Returning go_to_url
+2024-10-11 19:15:47 - Voy a dormir -949.542765 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:15:47 - Returning process2
+2024-10-11 19:15:47 - Next execution time: 2024-10-11 19:16:17.543006
+2024-10-11 19:16:17 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:16:17 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:16:17 - Returning go_to_url
+2024-10-11 19:16:17 - Voy a dormir -979.554588 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:16:17 - Returning process2
+2024-10-11 19:16:17 - Next execution time: 2024-10-11 19:16:55.554796
+2024-10-11 19:16:55 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:16:55 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:16:55 - Returning go_to_url
+2024-10-11 19:16:55 - Voy a dormir -1017.560152 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:16:55 - Returning process2
+2024-10-11 19:16:55 - Next execution time: 2024-10-11 19:17:13.560593
+2024-10-11 19:17:13 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:17:13 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:17:13 - Returning go_to_url
+2024-10-11 19:17:13 - Voy a dormir -1035.569081 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:17:13 - Returning process2
+2024-10-11 19:17:13 - Next execution time: 2024-10-11 19:17:29.569480
+2024-10-11 19:17:29 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:17:29 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:17:29 - Returning go_to_url
+2024-10-11 19:17:29 - Voy a dormir -1051.581696 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:17:29 - Returning process2
+2024-10-11 19:17:29 - Next execution time: 2024-10-11 19:18:05.582296
+2024-10-11 19:18:05 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:18:05 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:18:05 - Returning go_to_url
+2024-10-11 19:18:05 - Voy a dormir -1087.593165 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:18:05 - Returning process2
+2024-10-11 19:18:05 - Next execution time: 2024-10-11 19:18:15.593425
+2024-10-11 19:18:15 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:18:15 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:18:15 - Returning go_to_url
+2024-10-11 19:18:15 - Voy a dormir -1097.606177 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:18:15 - Returning process2
+2024-10-11 19:18:15 - Next execution time: 2024-10-11 19:18:54.606824
+2024-10-11 19:18:54 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:18:54 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:18:54 - Returning go_to_url
+2024-10-11 19:18:54 - Voy a dormir -1136.617399 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:18:54 - Returning process2
+2024-10-11 19:18:54 - Next execution time: 2024-10-11 19:19:24.618002
+2024-10-11 19:19:24 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:19:24 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:19:24 - Returning go_to_url
+2024-10-11 19:19:24 - Voy a dormir -1166.627111 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:19:24 - Returning process2
+2024-10-11 19:19:24 - Next execution time: 2024-10-11 19:19:39.627808
+2024-10-11 19:19:39 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:19:39 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:19:39 - Returning go_to_url
+2024-10-11 19:19:39 - Voy a dormir -1181.637343 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:19:39 - Returning process2
+2024-10-11 19:19:39 - Next execution time: 2024-10-11 19:20:06.637771
+2024-10-11 19:20:06 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:20:06 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:20:06 - Returning go_to_url
+2024-10-11 19:20:06 - Voy a dormir -1208.648026 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:20:06 - Returning process2
+2024-10-11 19:20:06 - Next execution time: 2024-10-11 19:20:31.648286
+2024-10-11 19:20:31 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:20:31 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:20:31 - Returning go_to_url
+2024-10-11 19:20:31 - Voy a dormir -1233.663181 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:20:31 - Returning process2
+2024-10-11 19:20:31 - Next execution time: 2024-10-11 19:20:55.663426
+2024-10-11 19:20:55 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:20:55 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:20:55 - Returning go_to_url
+2024-10-11 19:20:55 - Voy a dormir -1257.777025 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:20:55 - Returning process2
+2024-10-11 19:20:55 - Next execution time: 2024-10-11 19:21:30.777432
+2024-10-11 19:21:30 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:21:30 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:21:30 - Returning go_to_url
+2024-10-11 19:21:30 - Voy a dormir -1292.787667 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:21:30 - Returning process2
+2024-10-11 19:21:30 - Next execution time: 2024-10-11 19:21:46.788187
+2024-10-11 19:21:46 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:21:46 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:21:46 - Returning go_to_url
+2024-10-11 19:21:46 - Voy a dormir -1308.802078 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:21:46 - Returning process2
+2024-10-11 19:21:46 - Next execution time: 2024-10-11 19:22:15.802425
+2024-10-11 19:22:15 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:22:15 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:22:15 - Returning go_to_url
+2024-10-11 19:22:15 - Voy a dormir -1337.812402 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:22:15 - Returning process2
+2024-10-11 19:22:15 - Next execution time: 2024-10-11 19:22:35.813308
+2024-10-11 19:22:35 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:22:35 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:22:35 - Returning go_to_url
+2024-10-11 19:22:35 - Voy a dormir -1357.827927 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:22:35 - Returning process2
+2024-10-11 19:22:35 - Next execution time: 2024-10-11 19:22:48.828419
+2024-10-11 19:22:48 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:22:48 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:22:48 - Returning go_to_url
+2024-10-11 19:22:48 - Voy a dormir -1370.842093 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:22:48 - Returning process2
+2024-10-11 19:22:48 - Next execution time: 2024-10-11 19:23:17.842567
+2024-10-11 19:23:17 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:23:17 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:23:17 - Returning go_to_url
+2024-10-11 19:23:17 - Voy a dormir -1399.861849 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:23:17 - Returning process2
+2024-10-11 19:23:17 - Next execution time: 2024-10-11 19:23:45.862436
+2024-10-11 19:23:45 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:23:45 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:23:45 - Returning go_to_url
+2024-10-11 19:23:45 - Voy a dormir -1427.874282 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:23:45 - Returning process2
+2024-10-11 19:23:45 - Next execution time: 2024-10-11 19:24:19.874652
+2024-10-11 19:24:19 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:24:19 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:24:19 - Returning go_to_url
+2024-10-11 19:24:19 - Voy a dormir -1461.886105 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:24:19 - Returning process2
+2024-10-11 19:24:19 - Next execution time: 2024-10-11 19:24:55.886428
+2024-10-11 19:24:55 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:24:55 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:24:55 - Returning go_to_url
+2024-10-11 19:24:55 - Voy a dormir -1497.898616 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:24:55 - Returning process2
+2024-10-11 19:24:55 - Next execution time: 2024-10-11 19:25:16.898838
+2024-10-11 19:25:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:25:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:25:16 - Returning go_to_url
+2024-10-11 19:25:16 - Voy a dormir -1518.910403 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:25:16 - Returning process2
+2024-10-11 19:25:16 - Next execution time: 2024-10-11 19:25:40.910591
+2024-10-11 19:25:40 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:25:40 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:25:40 - Returning go_to_url
+2024-10-11 19:25:40 - Voy a dormir -1542.92318 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:25:40 - Returning process2
+2024-10-11 19:25:40 - Next execution time: 2024-10-11 19:26:09.923885
+2024-10-11 19:26:09 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:26:09 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:26:09 - Returning go_to_url
+2024-10-11 19:26:09 - Voy a dormir -1571.935029 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:26:09 - Returning process2
+2024-10-11 19:26:09 - Next execution time: 2024-10-11 19:26:34.935204
+2024-10-11 19:26:34 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:26:34 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:26:34 - Returning go_to_url
+2024-10-11 19:26:34 - Voy a dormir -1596.945178 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:26:34 - Returning process2
+2024-10-11 19:26:34 - Next execution time: 2024-10-11 19:27:09.946055
+2024-10-11 19:27:09 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:27:09 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:27:09 - Returning go_to_url
+2024-10-11 19:27:09 - Voy a dormir -1631.958357 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:27:09 - Returning process2
+2024-10-11 19:27:09 - Next execution time: 2024-10-11 19:27:40.958652
+2024-10-11 19:27:40 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:27:40 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:27:40 - Returning go_to_url
+2024-10-11 19:27:40 - Voy a dormir -1662.967284 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:27:40 - Returning process2
+2024-10-11 19:27:40 - Next execution time: 2024-10-11 19:28:14.967636
+2024-10-11 19:28:14 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:28:14 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:28:14 - Returning go_to_url
+2024-10-11 19:28:14 - Voy a dormir -1696.976872 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:28:14 - Returning process2
+2024-10-11 19:28:14 - Next execution time: 2024-10-11 19:28:26.977233
+2024-10-11 19:28:26 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:28:26 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:28:26 - Returning go_to_url
+2024-10-11 19:28:26 - Voy a dormir -1708.986663 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:28:26 - Returning process2
+2024-10-11 19:28:26 - Next execution time: 2024-10-11 19:29:02.987110
+2024-10-11 19:29:02 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:29:02 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:29:02 - Returning go_to_url
+2024-10-11 19:29:02 - Voy a dormir -1744.997577 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:29:02 - Returning process2
+2024-10-11 19:29:02 - Next execution time: 2024-10-11 19:29:26.998257
+2024-10-11 19:29:27 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:29:27 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:29:27 - Returning go_to_url
+2024-10-11 19:29:27 - Voy a dormir -1769.009491 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:29:27 - Returning process2
+2024-10-11 19:29:27 - Next execution time: 2024-10-11 19:29:50.009769
+2024-10-11 19:29:50 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:29:50 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:29:50 - Returning go_to_url
+2024-10-11 19:29:50 - Voy a dormir -1792.019351 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:29:50 - Returning process2
+2024-10-11 19:29:50 - Next execution time: 2024-10-11 19:30:11.019588
+2024-10-11 19:30:11 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:30:11 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:30:11 - Returning go_to_url
+2024-10-11 19:30:11 - Voy a dormir -1813.026056 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:30:11 - Returning process2
+2024-10-11 19:30:11 - Next execution time: 2024-10-11 19:30:25.026798
+2024-10-11 19:30:25 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:30:25 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:30:25 - Returning go_to_url
+2024-10-11 19:30:25 - Voy a dormir -1827.038825 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:30:25 - Returning process2
+2024-10-11 19:30:25 - Next execution time: 2024-10-11 19:30:41.039236
+2024-10-11 19:30:41 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:30:41 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:30:41 - Returning go_to_url
+2024-10-11 19:30:41 - Voy a dormir -1843.05315 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:30:41 - Returning process2
+2024-10-11 19:30:41 - Next execution time: 2024-10-11 19:30:58.053564
+2024-10-11 19:30:58 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:30:58 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:30:58 - Returning go_to_url
+2024-10-11 19:30:58 - Voy a dormir -1860.066731 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:30:58 - Returning process2
+2024-10-11 19:30:58 - Next execution time: 2024-10-11 19:31:22.067188
+2024-10-11 19:31:22 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:31:22 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:31:22 - Returning go_to_url
+2024-10-11 19:31:22 - Voy a dormir -1884.076643 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:31:22 - Returning process2
+2024-10-11 19:31:22 - Next execution time: 2024-10-11 19:31:47.076878
+2024-10-11 19:31:47 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:31:47 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:31:47 - Returning go_to_url
+2024-10-11 19:31:47 - Voy a dormir -1909.086897 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:31:47 - Returning process2
+2024-10-11 19:31:47 - Next execution time: 2024-10-11 19:32:16.087296
+2024-10-11 19:32:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:32:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:32:16 - Returning go_to_url
+2024-10-11 19:32:16 - Voy a dormir -1938.098409 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:32:16 - Returning process2
+2024-10-11 19:32:16 - Next execution time: 2024-10-11 19:32:35.098784
+2024-10-11 19:32:35 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:32:35 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:32:35 - Returning go_to_url
+2024-10-11 19:32:35 - Voy a dormir -1957.109369 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:32:35 - Returning process2
+2024-10-11 19:32:35 - Next execution time: 2024-10-11 19:32:58.109531
+2024-10-11 19:32:58 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:32:58 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:32:58 - Returning go_to_url
+2024-10-11 19:32:58 - Voy a dormir -1980.120086 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:32:58 - Returning process2
+2024-10-11 19:32:58 - Next execution time: 2024-10-11 19:33:22.120256
+2024-10-11 19:33:22 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:33:22 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:33:22 - Returning go_to_url
+2024-10-11 19:33:22 - Voy a dormir -2004.129794 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:33:22 - Returning process2
+2024-10-11 19:33:22 - Next execution time: 2024-10-11 19:33:41.130032
+2024-10-11 19:33:41 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:33:41 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:33:41 - Returning go_to_url
+2024-10-11 19:33:41 - Voy a dormir -2023.1429 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:33:41 - Returning process2
+2024-10-11 19:33:41 - Next execution time: 2024-10-11 19:34:14.143127
+2024-10-11 19:34:14 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:34:14 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:34:14 - Returning go_to_url
+2024-10-11 19:34:14 - Voy a dormir -2056.150222 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:34:14 - Returning process2
+2024-10-11 19:34:14 - Next execution time: 2024-10-11 19:34:50.150674
+2024-10-11 19:34:50 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:34:50 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:34:50 - Returning go_to_url
+2024-10-11 19:34:50 - Voy a dormir -2092.168394 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:34:50 - Returning process2
+2024-10-11 19:34:50 - Next execution time: 2024-10-11 19:35:16.168980
+2024-10-11 19:35:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:35:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:35:16 - Returning go_to_url
+2024-10-11 19:35:16 - Voy a dormir -2118.178209 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:35:16 - Returning process2
+2024-10-11 19:35:16 - Next execution time: 2024-10-11 19:35:31.178528
+2024-10-11 19:35:31 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:35:31 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:35:31 - Returning go_to_url
+2024-10-11 19:35:31 - Voy a dormir -2133.184533 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:35:31 - Returning process2
+2024-10-11 19:35:31 - Next execution time: 2024-10-11 19:36:02.184758
+2024-10-11 19:36:02 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:36:02 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:36:02 - Returning go_to_url
+2024-10-11 19:36:02 - Voy a dormir -2164.198343 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:36:02 - Returning process2
+2024-10-11 19:36:02 - Next execution time: 2024-10-11 19:36:19.198857
+2024-10-11 19:36:19 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:36:19 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:36:19 - Returning go_to_url
+2024-10-11 19:36:19 - Voy a dormir -2181.206352 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:36:19 - Returning process2
+2024-10-11 19:36:19 - Next execution time: 2024-10-11 19:36:34.206559
+2024-10-11 19:36:34 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:36:34 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:36:34 - Returning go_to_url
+2024-10-11 19:36:34 - Voy a dormir -2196.220781 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:36:34 - Returning process2
+2024-10-11 19:36:34 - Next execution time: 2024-10-11 19:36:50.221210
+2024-10-11 19:36:50 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:36:50 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:36:50 - Returning go_to_url
+2024-10-11 19:36:50 - Voy a dormir -2212.232611 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:36:50 - Returning process2
+2024-10-11 19:36:50 - Next execution time: 2024-10-11 19:37:02.233242
+2024-10-11 19:37:02 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:37:02 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:37:02 - Returning go_to_url
+2024-10-11 19:37:02 - Voy a dormir -2224.24604 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:37:02 - Returning process2
+2024-10-11 19:37:02 - Next execution time: 2024-10-11 19:37:37.246699
+2024-10-11 19:37:37 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:37:37 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:37:37 - Returning go_to_url
+2024-10-11 19:37:37 - Voy a dormir -2259.258506 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:37:37 - Returning process2
+2024-10-11 19:37:37 - Next execution time: 2024-10-11 19:37:47.258826
+2024-10-11 19:37:47 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:37:47 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:37:47 - Returning go_to_url
+2024-10-11 19:37:47 - Voy a dormir -2269.264568 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:37:47 - Returning process2
+2024-10-11 19:37:47 - Next execution time: 2024-10-11 19:38:15.265037
+2024-10-11 19:38:15 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:38:15 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:38:15 - Returning go_to_url
+2024-10-11 19:38:15 - Voy a dormir -2297.277759 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:38:15 - Returning process2
+2024-10-11 19:38:15 - Next execution time: 2024-10-11 19:38:43.278215
+2024-10-11 19:38:43 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:38:43 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:38:43 - Returning go_to_url
+2024-10-11 19:38:43 - Voy a dormir -2325.29109 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:38:43 - Returning process2
+2024-10-11 19:38:43 - Next execution time: 2024-10-11 19:39:22.291383
+2024-10-11 19:39:22 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:39:22 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:39:22 - Returning go_to_url
+2024-10-11 19:39:22 - Voy a dormir -2364.301357 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:39:22 - Returning process2
+2024-10-11 19:39:22 - Next execution time: 2024-10-11 19:39:36.301600
+2024-10-11 19:39:36 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:39:36 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:39:36 - Returning go_to_url
+2024-10-11 19:39:36 - Voy a dormir -2378.309559 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:39:36 - Returning process2
+2024-10-11 19:39:36 - Next execution time: 2024-10-11 19:40:09.309821
+2024-10-11 19:40:09 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:40:09 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:40:09 - Returning go_to_url
+2024-10-11 19:40:09 - Voy a dormir -2411.325371 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:40:09 - Returning process2
+2024-10-11 19:40:09 - Next execution time: 2024-10-11 19:40:20.325661
+2024-10-11 19:40:20 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:40:20 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:40:20 - Returning go_to_url
+2024-10-11 19:40:20 - Voy a dormir -2422.335705 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:40:20 - Returning process2
+2024-10-11 19:40:20 - Next execution time: 2024-10-11 19:40:44.336164
+2024-10-11 19:40:44 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:40:44 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:40:44 - Returning go_to_url
+2024-10-11 19:40:44 - Voy a dormir -2446.342362 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:40:44 - Returning process2
+2024-10-11 19:40:44 - Next execution time: 2024-10-11 19:41:08.342699
+2024-10-11 19:41:08 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:41:08 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:41:08 - Returning go_to_url
+2024-10-11 19:41:08 - Voy a dormir -2470.345816 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:41:08 - Returning process2
+2024-10-11 19:41:08 - Next execution time: 2024-10-11 19:41:24.346207
+2024-10-11 19:41:24 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:41:24 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:41:24 - Returning go_to_url
+2024-10-11 19:41:24 - Voy a dormir -2486.357739 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:41:24 - Returning process2
+2024-10-11 19:41:24 - Next execution time: 2024-10-11 19:41:37.358310
+2024-10-11 19:41:37 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:41:37 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:41:37 - Returning go_to_url
+2024-10-11 19:41:37 - Voy a dormir -2499.369196 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:41:37 - Returning process2
+2024-10-11 19:41:37 - Next execution time: 2024-10-11 19:41:50.369369
+2024-10-11 19:41:50 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:41:50 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:41:50 - Returning go_to_url
+2024-10-11 19:41:50 - Voy a dormir -2512.38038 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:41:50 - Returning process2
+2024-10-11 19:41:50 - Next execution time: 2024-10-11 19:42:16.380709
+2024-10-11 19:42:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:42:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:42:16 - Returning go_to_url
+2024-10-11 19:42:16 - Voy a dormir -2538.395052 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:42:16 - Returning process2
+2024-10-11 19:42:16 - Next execution time: 2024-10-11 19:42:26.395342
+2024-10-11 19:42:26 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:42:26 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:42:26 - Returning go_to_url
+2024-10-11 19:42:26 - Voy a dormir -2548.404791 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:42:26 - Returning process2
+2024-10-11 19:42:26 - Next execution time: 2024-10-11 19:42:55.405027
+2024-10-11 19:42:55 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:42:55 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:42:55 - Returning go_to_url
+2024-10-11 19:42:55 - Voy a dormir -2577.415859 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:42:55 - Returning process2
+2024-10-11 19:42:55 - Next execution time: 2024-10-11 19:43:14.416158
+2024-10-11 19:43:14 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:43:14 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:43:14 - Returning go_to_url
+2024-10-11 19:43:14 - Voy a dormir -2596.457338 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:43:14 - Returning process2
+2024-10-11 19:43:14 - Next execution time: 2024-10-11 19:43:37.459460
+2024-10-11 19:43:37 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:43:37 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:43:37 - Returning go_to_url
+2024-10-11 19:43:37 - Voy a dormir -2619.47347 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:43:37 - Returning process2
+2024-10-11 19:43:37 - Next execution time: 2024-10-11 19:43:52.474122
+2024-10-11 19:43:52 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:43:52 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:43:52 - Returning go_to_url
+2024-10-11 19:43:52 - Voy a dormir -2634.484617 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:43:52 - Returning process2
+2024-10-11 19:43:52 - Next execution time: 2024-10-11 19:44:13.485141
+2024-10-11 19:44:13 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:44:13 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:44:13 - Returning go_to_url
+2024-10-11 19:44:13 - Voy a dormir -2655.492254 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:44:13 - Returning process2
+2024-10-11 19:44:13 - Next execution time: 2024-10-11 19:44:50.492650
+2024-10-11 19:44:50 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:44:50 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:44:50 - Returning go_to_url
+2024-10-11 19:44:50 - Voy a dormir -2692.503613 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:44:50 - Returning process2
+2024-10-11 19:44:50 - Next execution time: 2024-10-11 19:45:23.503816
+2024-10-11 19:45:23 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:45:23 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:45:23 - Returning go_to_url
+2024-10-11 19:45:23 - Voy a dormir -2725.512824 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:45:23 - Returning process2
+2024-10-11 19:45:23 - Next execution time: 2024-10-11 19:45:49.513375
+2024-10-11 19:45:49 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:45:49 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:45:49 - Returning go_to_url
+2024-10-11 19:45:49 - Voy a dormir -2751.522983 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:45:49 - Returning process2
+2024-10-11 19:45:49 - Next execution time: 2024-10-11 19:46:11.523212
+2024-10-11 19:46:11 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:46:11 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:46:11 - Returning go_to_url
+2024-10-11 19:46:11 - Voy a dormir -2773.533668 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:46:11 - Returning process2
+2024-10-11 19:46:11 - Next execution time: 2024-10-11 19:46:36.533899
+2024-10-11 19:46:36 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:46:36 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:46:36 - Returning go_to_url
+2024-10-11 19:46:36 - Voy a dormir -2798.541056 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:46:36 - Returning process2
+2024-10-11 19:46:36 - Next execution time: 2024-10-11 19:46:50.541271
+2024-10-11 19:46:50 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:46:50 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:46:50 - Returning go_to_url
+2024-10-11 19:46:50 - Voy a dormir -2812.553245 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:46:50 - Returning process2
+2024-10-11 19:46:50 - Next execution time: 2024-10-11 19:47:17.553599
+2024-10-11 19:47:17 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:47:17 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:47:17 - Returning go_to_url
+2024-10-11 19:47:17 - Voy a dormir -2839.564026 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:47:17 - Returning process2
+2024-10-11 19:47:17 - Next execution time: 2024-10-11 19:47:29.564348
+2024-10-11 19:47:29 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:47:29 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:47:29 - Returning go_to_url
+2024-10-11 19:47:29 - Voy a dormir -2851.576703 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:47:29 - Returning process2
+2024-10-11 19:47:29 - Next execution time: 2024-10-11 19:47:57.577288
+2024-10-11 19:47:57 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:47:57 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:47:57 - Returning go_to_url
+2024-10-11 19:47:57 - Voy a dormir -2879.590763 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:47:57 - Returning process2
+2024-10-11 19:47:57 - Next execution time: 2024-10-11 19:48:10.591419
+2024-10-11 19:48:10 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:48:10 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:48:10 - Returning go_to_url
+2024-10-11 19:48:10 - Voy a dormir -2892.603183 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:48:10 - Returning process2
+2024-10-11 19:48:10 - Next execution time: 2024-10-11 19:48:30.603443
+2024-10-11 19:48:30 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:48:30 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:48:30 - Returning go_to_url
+2024-10-11 19:48:30 - Voy a dormir -2912.612458 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:48:30 - Returning process2
+2024-10-11 19:48:30 - Next execution time: 2024-10-11 19:48:59.612939
+2024-10-11 19:48:59 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:48:59 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:48:59 - Returning go_to_url
+2024-10-11 19:48:59 - Voy a dormir -2941.623074 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:48:59 - Returning process2
+2024-10-11 19:48:59 - Next execution time: 2024-10-11 19:49:12.623456
+2024-10-11 19:49:12 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:49:12 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:49:12 - Returning go_to_url
+2024-10-11 19:49:12 - Voy a dormir -2954.629738 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:49:12 - Returning process2
+2024-10-11 19:49:12 - Next execution time: 2024-10-11 19:49:45.629956
+2024-10-11 19:49:45 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:49:45 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:49:45 - Returning go_to_url
+2024-10-11 19:49:45 - Voy a dormir -2987.640297 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:49:45 - Returning process2
+2024-10-11 19:49:45 - Next execution time: 2024-10-11 19:50:24.640881
+2024-10-11 19:50:24 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:50:24 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:50:24 - Returning go_to_url
+2024-10-11 19:50:24 - Voy a dormir -3026.649384 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:50:24 - Returning process2
+2024-10-11 19:50:24 - Next execution time: 2024-10-11 19:50:35.649733
+2024-10-11 19:50:35 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:50:35 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:50:35 - Returning go_to_url
+2024-10-11 19:50:35 - Voy a dormir -3037.659299 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:50:35 - Returning process2
+2024-10-11 19:50:35 - Next execution time: 2024-10-11 19:51:05.659730
+2024-10-11 19:51:05 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:51:05 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:51:05 - Returning go_to_url
+2024-10-11 19:51:05 - Voy a dormir -3067.670127 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:51:05 - Returning process2
+2024-10-11 19:51:05 - Next execution time: 2024-10-11 19:51:19.670550
+2024-10-11 19:51:19 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:51:19 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:51:19 - Returning go_to_url
+2024-10-11 19:51:19 - Voy a dormir -3081.682297 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:51:19 - Returning process2
+2024-10-11 19:51:19 - Next execution time: 2024-10-11 19:51:58.682531
+2024-10-11 19:51:58 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:51:58 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:51:58 - Returning go_to_url
+2024-10-11 19:51:58 - Voy a dormir -3120.694931 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:51:58 - Returning process2
+2024-10-11 19:51:58 - Next execution time: 2024-10-11 19:52:34.695611
+2024-10-11 19:52:34 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:52:34 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:52:34 - Returning go_to_url
+2024-10-11 19:52:34 - Voy a dormir -3156.705135 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:52:34 - Returning process2
+2024-10-11 19:52:34 - Next execution time: 2024-10-11 19:53:06.705785
+2024-10-11 19:53:06 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:53:06 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:53:06 - Returning go_to_url
+2024-10-11 19:53:06 - Voy a dormir -3188.716578 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:53:06 - Returning process2
+2024-10-11 19:53:06 - Next execution time: 2024-10-11 19:53:36.716968
+2024-10-11 19:53:36 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:53:36 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:53:36 - Returning go_to_url
+2024-10-11 19:53:36 - Voy a dormir -3218.728044 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:53:36 - Returning process2
+2024-10-11 19:53:36 - Next execution time: 2024-10-11 19:54:00.728256
+2024-10-11 19:54:00 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:54:00 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:54:00 - Returning go_to_url
+2024-10-11 19:54:00 - Voy a dormir -3242.741566 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:54:00 - Returning process2
+2024-10-11 19:54:00 - Next execution time: 2024-10-11 19:54:29.744018
+2024-10-11 19:54:29 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:54:29 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:54:29 - Returning go_to_url
+2024-10-11 19:54:29 - Voy a dormir -3271.749757 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:54:29 - Returning process2
+2024-10-11 19:54:29 - Next execution time: 2024-10-11 19:54:41.750314
+2024-10-11 19:54:41 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:54:41 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:54:41 - Returning go_to_url
+2024-10-11 19:54:41 - Voy a dormir -3283.761625 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:54:41 - Returning process2
+2024-10-11 19:54:41 - Next execution time: 2024-10-11 19:54:57.761795
+2024-10-11 19:54:57 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:54:57 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:54:57 - Returning go_to_url
+2024-10-11 19:54:57 - Voy a dormir -3299.770355 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:54:57 - Returning process2
+2024-10-11 19:54:57 - Next execution time: 2024-10-11 19:55:14.771099
+2024-10-11 19:55:14 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:55:14 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:55:14 - Returning go_to_url
+2024-10-11 19:55:14 - Voy a dormir -3316.783645 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:55:14 - Returning process2
+2024-10-11 19:55:14 - Next execution time: 2024-10-11 19:55:48.783924
+2024-10-11 19:55:48 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:55:48 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:55:48 - Returning go_to_url
+2024-10-11 19:55:48 - Voy a dormir -3350.796431 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:55:48 - Returning process2
+2024-10-11 19:55:48 - Next execution time: 2024-10-11 19:56:02.796738
+2024-10-11 19:56:02 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:56:02 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:56:02 - Returning go_to_url
+2024-10-11 19:56:02 - Voy a dormir -3364.809936 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:56:02 - Returning process2
+2024-10-11 19:56:02 - Next execution time: 2024-10-11 19:56:33.810415
+2024-10-11 19:56:33 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:56:33 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:56:33 - Returning go_to_url
+2024-10-11 19:56:33 - Voy a dormir -3395.820977 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:56:33 - Returning process2
+2024-10-11 19:56:33 - Next execution time: 2024-10-11 19:57:02.821470
+2024-10-11 19:57:02 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:57:02 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:57:02 - Returning go_to_url
+2024-10-11 19:57:02 - Voy a dormir -3424.831649 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:57:02 - Returning process2
+2024-10-11 19:57:02 - Next execution time: 2024-10-11 19:57:39.831813
+2024-10-11 19:57:39 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:57:39 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:57:39 - Returning go_to_url
+2024-10-11 19:57:39 - Voy a dormir -3461.842382 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:57:39 - Returning process2
+2024-10-11 19:57:39 - Next execution time: 2024-10-11 19:58:05.842740
+2024-10-11 19:58:05 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:58:05 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:58:05 - Returning go_to_url
+2024-10-11 19:58:05 - Voy a dormir -3487.848309 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:58:05 - Returning process2
+2024-10-11 19:58:05 - Next execution time: 2024-10-11 19:58:44.848755
+2024-10-11 19:58:44 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:58:44 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:58:44 - Returning go_to_url
+2024-10-11 19:58:44 - Voy a dormir -3526.861904 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:58:44 - Returning process2
+2024-10-11 19:58:44 - Next execution time: 2024-10-11 19:59:12.862259
+2024-10-11 19:59:12 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:59:12 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:59:12 - Returning go_to_url
+2024-10-11 19:59:12 - Voy a dormir -3554.936854 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:59:12 - Returning process2
+2024-10-11 19:59:12 - Next execution time: 2024-10-11 19:59:47.937110
+2024-10-11 19:59:47 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 19:59:47 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 19:59:47 - Returning go_to_url
+2024-10-11 19:59:47 - Voy a dormir -3589.948223 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 19:59:47 - Returning process2
+2024-10-11 19:59:47 - Next execution time: 2024-10-11 20:00:22.948390
+2024-10-11 20:00:22 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:00:22 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:00:22 - Returning go_to_url
+2024-10-11 20:00:22 - Voy a dormir -3624.959648 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:00:22 - Returning process2
+2024-10-11 20:00:22 - Next execution time: 2024-10-11 20:00:35.960267
+2024-10-11 20:00:35 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:00:35 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:00:35 - Returning go_to_url
+2024-10-11 20:00:35 - Voy a dormir -3637.972787 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:00:35 - Returning process2
+2024-10-11 20:00:35 - Next execution time: 2024-10-11 20:01:11.973095
+2024-10-11 20:01:11 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:01:11 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:01:11 - Returning go_to_url
+2024-10-11 20:01:11 - Voy a dormir -3673.985974 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:01:11 - Returning process2
+2024-10-11 20:01:11 - Next execution time: 2024-10-11 20:01:41.986231
+2024-10-11 20:01:41 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:01:41 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:01:41 - Returning go_to_url
+2024-10-11 20:01:41 - Voy a dormir -3703.999105 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:01:41 - Returning process2
+2024-10-11 20:01:41 - Next execution time: 2024-10-11 20:02:10.999681
+2024-10-11 20:02:11 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:02:11 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:02:11 - Returning go_to_url
+2024-10-11 20:02:11 - Voy a dormir -3733.011987 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:02:11 - Returning process2
+2024-10-11 20:02:11 - Next execution time: 2024-10-11 20:02:39.012461
+2024-10-11 20:02:39 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:02:39 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:02:39 - Returning go_to_url
+2024-10-11 20:02:39 - Voy a dormir -3761.021408 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:02:39 - Returning process2
+2024-10-11 20:02:39 - Next execution time: 2024-10-11 20:02:59.021709
+2024-10-11 20:02:59 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:02:59 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:02:59 - Returning go_to_url
+2024-10-11 20:02:59 - Voy a dormir -3781.03156 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:02:59 - Returning process2
+2024-10-11 20:02:59 - Next execution time: 2024-10-11 20:03:23.032139
+2024-10-11 20:03:23 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:03:23 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:03:23 - Returning go_to_url
+2024-10-11 20:03:23 - Voy a dormir -3805.044518 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:03:23 - Returning process2
+2024-10-11 20:03:23 - Next execution time: 2024-10-11 20:03:36.045015
+2024-10-11 20:03:36 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:03:36 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:03:36 - Returning go_to_url
+2024-10-11 20:03:36 - Voy a dormir -3818.056699 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:03:36 - Returning process2
+2024-10-11 20:03:36 - Next execution time: 2024-10-11 20:03:46.057338
+2024-10-11 20:03:46 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:03:46 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:03:46 - Returning go_to_url
+2024-10-11 20:03:46 - Voy a dormir -3828.067391 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:03:46 - Returning process2
+2024-10-11 20:03:46 - Next execution time: 2024-10-11 20:04:08.067797
+2024-10-11 20:04:08 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:04:08 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:04:08 - Returning go_to_url
+2024-10-11 20:04:08 - Voy a dormir -3850.080016 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:04:08 - Returning process2
+2024-10-11 20:04:08 - Next execution time: 2024-10-11 20:04:37.080688
+2024-10-11 20:04:37 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:04:37 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:04:37 - Returning go_to_url
+2024-10-11 20:04:37 - Voy a dormir -3879.091391 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:04:37 - Returning process2
+2024-10-11 20:04:37 - Next execution time: 2024-10-11 20:05:03.091666
+2024-10-11 20:05:03 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:05:03 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:05:03 - Returning go_to_url
+2024-10-11 20:05:03 - Voy a dormir -3905.105471 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:05:03 - Returning process2
+2024-10-11 20:05:03 - Next execution time: 2024-10-11 20:05:20.106063
+2024-10-11 20:05:20 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:05:20 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:05:20 - Returning go_to_url
+2024-10-11 20:05:20 - Voy a dormir -3922.116686 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:05:20 - Returning process2
+2024-10-11 20:05:20 - Next execution time: 2024-10-11 20:05:36.117779
+2024-10-11 20:05:36 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:05:36 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:05:36 - Returning go_to_url
+2024-10-11 20:05:36 - Voy a dormir -3938.126441 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:05:36 - Returning process2
+2024-10-11 20:05:36 - Next execution time: 2024-10-11 20:05:47.126887
+2024-10-11 20:05:47 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:05:47 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:05:47 - Returning go_to_url
+2024-10-11 20:05:47 - Voy a dormir -3949.135693 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:05:47 - Returning process2
+2024-10-11 20:05:47 - Next execution time: 2024-10-11 20:06:16.136079
+2024-10-11 20:06:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:06:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:06:16 - Returning go_to_url
+2024-10-11 20:06:16 - Voy a dormir -3978.146591 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:06:16 - Returning process2
+2024-10-11 20:06:16 - Next execution time: 2024-10-11 20:06:27.146988
+2024-10-11 20:06:27 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:06:27 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:06:27 - Returning go_to_url
+2024-10-11 20:06:27 - Voy a dormir -3989.159463 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:06:27 - Returning process2
+2024-10-11 20:06:27 - Next execution time: 2024-10-11 20:06:41.159958
+2024-10-11 20:06:41 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:06:41 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:06:41 - Returning go_to_url
+2024-10-11 20:06:41 - Voy a dormir -4003.172546 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:06:41 - Returning process2
+2024-10-11 20:06:41 - Next execution time: 2024-10-11 20:07:15.172742
+2024-10-11 20:07:15 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:07:15 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:07:15 - Returning go_to_url
+2024-10-11 20:07:15 - Voy a dormir -4037.183073 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:07:15 - Returning process2
+2024-10-11 20:07:15 - Next execution time: 2024-10-11 20:07:39.183370
+2024-10-11 20:07:39 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:07:39 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:07:39 - Returning go_to_url
+2024-10-11 20:07:39 - Voy a dormir -4061.194587 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:07:39 - Returning process2
+2024-10-11 20:07:39 - Next execution time: 2024-10-11 20:08:11.195137
+2024-10-11 20:08:11 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:08:11 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:08:11 - Returning go_to_url
+2024-10-11 20:08:11 - Voy a dormir -4093.208092 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:08:11 - Returning process2
+2024-10-11 20:08:11 - Next execution time: 2024-10-11 20:08:28.208377
+2024-10-11 20:08:28 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:08:28 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:08:28 - Returning go_to_url
+2024-10-11 20:08:28 - Voy a dormir -4110.220617 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:08:28 - Returning process2
+2024-10-11 20:08:28 - Next execution time: 2024-10-11 20:09:01.220847
+2024-10-11 20:09:01 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:09:01 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:09:01 - Returning go_to_url
+2024-10-11 20:09:01 - Voy a dormir -4143.230417 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:09:01 - Returning process2
+2024-10-11 20:09:01 - Next execution time: 2024-10-11 20:09:39.230645
+2024-10-11 20:09:39 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:09:39 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:09:39 - Returning go_to_url
+2024-10-11 20:09:39 - Voy a dormir -4181.243074 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:09:39 - Returning process2
+2024-10-11 20:09:39 - Next execution time: 2024-10-11 20:10:00.243387
+2024-10-11 20:10:00 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:10:00 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:10:00 - Returning go_to_url
+2024-10-11 20:10:00 - Voy a dormir -4202.251847 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:10:00 - Returning process2
+2024-10-11 20:10:00 - Next execution time: 2024-10-11 20:10:37.252428
+2024-10-11 20:10:37 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:10:37 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:10:37 - Returning go_to_url
+2024-10-11 20:10:37 - Voy a dormir -4239.266291 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:10:37 - Returning process2
+2024-10-11 20:10:37 - Next execution time: 2024-10-11 20:10:52.266699
+2024-10-11 20:10:52 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:10:52 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:10:52 - Returning go_to_url
+2024-10-11 20:10:52 - Voy a dormir -4254.28327 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:10:52 - Returning process2
+2024-10-11 20:10:52 - Next execution time: 2024-10-11 20:11:16.283796
+2024-10-11 20:11:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:11:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:11:16 - Returning go_to_url
+2024-10-11 20:11:16 - Voy a dormir -4278.29809 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:11:16 - Returning process2
+2024-10-11 20:11:16 - Next execution time: 2024-10-11 20:11:33.298467
+2024-10-11 20:11:33 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:11:33 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:11:33 - Returning go_to_url
+2024-10-11 20:11:33 - Voy a dormir -4295.3059 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:11:33 - Returning process2
+2024-10-11 20:11:33 - Next execution time: 2024-10-11 20:11:56.306210
+2024-10-11 20:11:56 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:11:56 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:11:56 - Returning go_to_url
+2024-10-11 20:11:56 - Voy a dormir -4318.325095 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:11:56 - Returning process2
+2024-10-11 20:11:56 - Next execution time: 2024-10-11 20:12:25.325546
+2024-10-11 20:12:25 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:12:25 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:12:25 - Returning go_to_url
+2024-10-11 20:12:25 - Voy a dormir -4347.342548 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:12:25 - Returning process2
+2024-10-11 20:12:25 - Next execution time: 2024-10-11 20:12:39.342859
+2024-10-11 20:12:39 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:12:39 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:12:39 - Returning go_to_url
+2024-10-11 20:12:39 - Voy a dormir -4361.360894 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:12:39 - Returning process2
+2024-10-11 20:12:39 - Next execution time: 2024-10-11 20:12:59.361302
+2024-10-11 20:12:59 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:12:59 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:12:59 - Returning go_to_url
+2024-10-11 20:12:59 - Voy a dormir -4381.37767 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:12:59 - Returning process2
+2024-10-11 20:12:59 - Next execution time: 2024-10-11 20:13:28.378275
+2024-10-11 20:13:28 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:13:28 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:13:28 - Returning go_to_url
+2024-10-11 20:13:28 - Voy a dormir -4410.395602 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:13:28 - Returning process2
+2024-10-11 20:13:28 - Next execution time: 2024-10-11 20:14:07.395799
+2024-10-11 20:14:07 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:14:07 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:14:07 - Returning go_to_url
+2024-10-11 20:14:07 - Voy a dormir -4449.413346 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:14:07 - Returning process2
+2024-10-11 20:14:07 - Next execution time: 2024-10-11 20:14:44.413756
+2024-10-11 20:14:44 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:14:44 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:14:44 - Returning go_to_url
+2024-10-11 20:14:44 - Voy a dormir -4486.431972 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:14:44 - Returning process2
+2024-10-11 20:14:44 - Next execution time: 2024-10-11 20:15:01.432217
+2024-10-11 20:15:01 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:15:01 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:15:01 - Returning go_to_url
+2024-10-11 20:15:01 - Voy a dormir -4503.442239 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:15:01 - Returning process2
+2024-10-11 20:15:01 - Next execution time: 2024-10-11 20:15:21.442575
+2024-10-11 20:15:21 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:15:21 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:15:21 - Returning go_to_url
+2024-10-11 20:15:21 - Voy a dormir -4523.451775 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:15:21 - Returning process2
+2024-10-11 20:15:21 - Next execution time: 2024-10-11 20:15:40.452094
+2024-10-11 20:16:07 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:16:07 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:16:07 - Returning go_to_url
+2024-10-11 20:16:07 - Voy a dormir -4569.368379 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:16:07 - Returning process2
+2024-10-11 20:16:07 - Next execution time: 2024-10-11 20:16:33.368588
+2024-10-11 20:16:33 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:16:33 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:16:33 - Returning go_to_url
+2024-10-11 20:16:33 - Voy a dormir -4595.3791 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:16:33 - Returning process2
+2024-10-11 20:16:33 - Next execution time: 2024-10-11 20:16:56.379748
+2024-10-11 20:16:56 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:16:56 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:16:56 - Returning go_to_url
+2024-10-11 20:16:56 - Voy a dormir -4618.390324 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:16:56 - Returning process2
+2024-10-11 20:16:56 - Next execution time: 2024-10-11 20:17:25.390756
+2024-10-11 20:17:25 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:17:25 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:17:25 - Returning go_to_url
+2024-10-11 20:17:25 - Voy a dormir -4647.403658 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:17:25 - Returning process2
+2024-10-11 20:17:25 - Next execution time: 2024-10-11 20:17:57.404183
+2024-10-11 20:17:57 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:17:57 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:17:57 - Returning go_to_url
+2024-10-11 20:17:57 - Voy a dormir -4679.41223 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:17:57 - Returning process2
+2024-10-11 20:17:57 - Next execution time: 2024-10-11 20:18:12.412703
+2024-10-11 20:18:12 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:18:12 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:18:12 - Returning go_to_url
+2024-10-11 20:18:12 - Voy a dormir -4694.423166 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:18:12 - Returning process2
+2024-10-11 20:18:12 - Next execution time: 2024-10-11 20:18:39.423538
+2024-10-11 20:18:39 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:18:39 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:18:39 - Returning go_to_url
+2024-10-11 20:18:39 - Voy a dormir -4721.433207 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:18:39 - Returning process2
+2024-10-11 20:18:39 - Next execution time: 2024-10-11 20:18:59.433459
+2024-10-11 20:18:59 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:18:59 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:18:59 - Returning go_to_url
+2024-10-11 20:18:59 - Voy a dormir -4741.444703 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:18:59 - Returning process2
+2024-10-11 20:18:59 - Next execution time: 2024-10-11 20:19:22.444945
+2024-10-11 20:19:22 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:19:22 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:19:22 - Returning go_to_url
+2024-10-11 20:19:22 - Voy a dormir -4764.458143 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:19:22 - Returning process2
+2024-10-11 20:19:22 - Next execution time: 2024-10-11 20:19:58.458638
+2024-10-11 20:19:58 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:19:58 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:19:58 - Returning go_to_url
+2024-10-11 20:19:58 - Voy a dormir -4800.471243 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:19:58 - Returning process2
+2024-10-11 20:19:58 - Next execution time: 2024-10-11 20:20:19.471768
+2024-10-11 20:20:19 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:20:19 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:20:19 - Returning go_to_url
+2024-10-11 20:20:19 - Voy a dormir -4821.485187 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:20:19 - Returning process2
+2024-10-11 20:20:19 - Next execution time: 2024-10-11 20:20:55.485669
+2024-10-11 20:20:55 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:20:55 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:20:55 - Returning go_to_url
+2024-10-11 20:20:55 - Voy a dormir -4857.498443 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:20:55 - Returning process2
+2024-10-11 20:20:55 - Next execution time: 2024-10-11 20:21:28.499077
+2024-10-11 20:21:28 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:21:28 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:21:28 - Returning go_to_url
+2024-10-11 20:21:28 - Voy a dormir -4890.512989 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:21:28 - Returning process2
+2024-10-11 20:21:28 - Next execution time: 2024-10-11 20:22:05.513794
+2024-10-11 20:22:05 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:22:05 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:22:05 - Returning go_to_url
+2024-10-11 20:22:05 - Voy a dormir -4927.528264 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:22:05 - Returning process2
+2024-10-11 20:22:05 - Next execution time: 2024-10-11 20:22:33.528604
+2024-10-11 20:22:33 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:22:33 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:22:33 - Returning go_to_url
+2024-10-11 20:22:33 - Voy a dormir -4955.543046 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:22:33 - Returning process2
+2024-10-11 20:22:33 - Next execution time: 2024-10-11 20:22:44.543462
+2024-10-11 20:22:44 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:22:44 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:22:44 - Returning go_to_url
+2024-10-11 20:22:44 - Voy a dormir -4966.564308 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:22:44 - Returning process2
+2024-10-11 20:22:44 - Next execution time: 2024-10-11 20:23:16.564736
+2024-10-11 20:23:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:23:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:23:16 - Returning go_to_url
+2024-10-11 20:23:16 - Voy a dormir -4998.578031 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:23:16 - Returning process2
+2024-10-11 20:23:16 - Next execution time: 2024-10-11 20:23:48.578496
+2024-10-11 20:23:48 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:23:48 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:23:48 - Returning go_to_url
+2024-10-11 20:23:48 - Voy a dormir -5030.590302 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:23:48 - Returning process2
+2024-10-11 20:23:48 - Next execution time: 2024-10-11 20:24:27.590815
+2024-10-11 20:24:27 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:24:27 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:24:27 - Returning go_to_url
+2024-10-11 20:24:27 - Voy a dormir -5069.600929 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:24:27 - Returning process2
+2024-10-11 20:24:27 - Next execution time: 2024-10-11 20:24:53.601325
+2024-10-11 20:24:53 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:24:53 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:24:53 - Returning go_to_url
+2024-10-11 20:24:53 - Voy a dormir -5095.616137 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:24:53 - Returning process2
+2024-10-11 20:24:53 - Next execution time: 2024-10-11 20:25:09.616394
+2024-10-11 20:25:09 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:25:09 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:25:09 - Returning go_to_url
+2024-10-11 20:25:09 - Voy a dormir -5111.630186 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:25:09 - Returning process2
+2024-10-11 20:25:09 - Next execution time: 2024-10-11 20:25:44.630539
+2024-10-11 20:25:44 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:25:44 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:25:44 - Returning go_to_url
+2024-10-11 20:25:44 - Voy a dormir -5146.653331 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:25:44 - Returning process2
+2024-10-11 20:25:44 - Next execution time: 2024-10-11 20:26:05.653591
+2024-10-11 20:26:05 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:26:05 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:26:05 - Returning go_to_url
+2024-10-11 20:26:05 - Voy a dormir -5167.663804 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:26:05 - Returning process2
+2024-10-11 20:26:05 - Next execution time: 2024-10-11 20:26:43.664212
+2024-10-11 20:26:43 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:26:43 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:26:43 - Returning go_to_url
+2024-10-11 20:26:43 - Voy a dormir -5205.675669 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:26:43 - Returning process2
+2024-10-11 20:26:43 - Next execution time: 2024-10-11 20:27:00.676245
+2024-10-11 20:27:00 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:27:00 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:27:00 - Returning go_to_url
+2024-10-11 20:27:00 - Voy a dormir -5222.696241 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:27:00 - Returning process2
+2024-10-11 20:27:00 - Next execution time: 2024-10-11 20:27:33.696793
+2024-10-11 20:27:33 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:27:33 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:27:33 - Returning go_to_url
+2024-10-11 20:27:33 - Voy a dormir -5255.71625 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:27:33 - Returning process2
+2024-10-11 20:27:33 - Next execution time: 2024-10-11 20:27:45.716718
+2024-10-11 20:27:45 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:27:45 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:27:45 - Returning go_to_url
+2024-10-11 20:27:45 - Voy a dormir -5267.734688 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:27:45 - Returning process2
+2024-10-11 20:27:45 - Next execution time: 2024-10-11 20:28:20.735112
+2024-10-11 20:28:20 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:28:20 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:28:20 - Returning go_to_url
+2024-10-11 20:28:20 - Voy a dormir -5302.741477 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:28:20 - Returning process2
+2024-10-11 20:28:20 - Next execution time: 2024-10-11 20:28:57.742115
+2024-10-11 20:28:57 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:28:57 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:28:57 - Returning go_to_url
+2024-10-11 20:28:57 - Voy a dormir -5339.757834 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:28:57 - Returning process2
+2024-10-11 20:28:57 - Next execution time: 2024-10-11 20:29:32.758168
+2024-10-11 20:29:32 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:29:32 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:29:32 - Returning go_to_url
+2024-10-11 20:29:32 - Voy a dormir -5374.768112 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:29:32 - Returning process2
+2024-10-11 20:29:32 - Next execution time: 2024-10-11 20:29:56.768676
+2024-10-11 20:29:56 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:29:56 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:29:56 - Returning go_to_url
+2024-10-11 20:29:56 - Voy a dormir -5398.781508 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:29:56 - Returning process2
+2024-10-11 20:29:56 - Next execution time: 2024-10-11 20:30:09.781970
+2024-10-11 20:30:09 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:30:09 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:30:09 - Returning go_to_url
+2024-10-11 20:30:09 - Voy a dormir -5411.794982 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:30:09 - Returning process2
+2024-10-11 20:30:09 - Next execution time: 2024-10-11 20:30:21.795763
+2024-10-11 20:30:21 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:30:21 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:30:21 - Returning go_to_url
+2024-10-11 20:30:21 - Voy a dormir -5423.811399 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:30:21 - Returning process2
+2024-10-11 20:30:21 - Next execution time: 2024-10-11 20:30:50.811632
+2024-10-11 20:30:50 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:30:50 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:30:50 - Returning go_to_url
+2024-10-11 20:30:50 - Voy a dormir -5452.827116 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:30:50 - Returning process2
+2024-10-11 20:30:50 - Next execution time: 2024-10-11 20:31:07.827417
+2024-10-11 20:31:07 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:31:07 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:31:07 - Returning go_to_url
+2024-10-11 20:31:07 - Voy a dormir -5469.845388 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:31:07 - Returning process2
+2024-10-11 20:31:07 - Next execution time: 2024-10-11 20:31:38.845792
+2024-10-11 20:31:38 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:31:38 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:31:38 - Returning go_to_url
+2024-10-11 20:31:38 - Voy a dormir -5500.859855 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:31:38 - Returning process2
+2024-10-11 20:31:38 - Next execution time: 2024-10-11 20:32:01.860286
+2024-10-11 20:32:01 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:32:01 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:32:01 - Returning go_to_url
+2024-10-11 20:32:01 - Voy a dormir -5523.870834 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:32:01 - Returning process2
+2024-10-11 20:32:01 - Next execution time: 2024-10-11 20:32:31.871155
+2024-10-11 20:32:31 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:32:31 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:32:31 - Returning go_to_url
+2024-10-11 20:32:31 - Voy a dormir -5553.891239 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:32:31 - Returning process2
+2024-10-11 20:32:31 - Next execution time: 2024-10-11 20:33:08.891723
+2024-10-11 20:33:08 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:33:08 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:33:08 - Returning go_to_url
+2024-10-11 20:33:08 - Voy a dormir -5590.90676 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:33:08 - Returning process2
+2024-10-11 20:33:08 - Next execution time: 2024-10-11 20:33:41.907410
+2024-10-11 20:33:41 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:33:41 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:33:41 - Returning go_to_url
+2024-10-11 20:33:41 - Voy a dormir -5623.924971 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:33:41 - Returning process2
+2024-10-11 20:33:41 - Next execution time: 2024-10-11 20:34:10.925411
+2024-10-11 20:34:10 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:34:10 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:34:10 - Returning go_to_url
+2024-10-11 20:34:10 - Voy a dormir -5652.934354 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:34:10 - Returning process2
+2024-10-11 20:34:10 - Next execution time: 2024-10-11 20:34:26.934570
+2024-10-11 20:34:26 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:34:26 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:34:26 - Returning go_to_url
+2024-10-11 20:34:26 - Voy a dormir -5668.942306 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:34:26 - Returning process2
+2024-10-11 20:34:26 - Next execution time: 2024-10-11 20:34:42.942591
+2024-10-11 20:34:43 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:34:43 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:34:43 - Returning go_to_url
+2024-10-11 20:34:43 - Voy a dormir -5685.018824 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:34:43 - Returning process2
+2024-10-11 20:34:43 - Next execution time: 2024-10-11 20:34:56.019109
+2024-10-11 20:34:56 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:34:56 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:34:56 - Returning go_to_url
+2024-10-11 20:34:56 - Voy a dormir -5698.027771 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:34:56 - Returning process2
+2024-10-11 20:34:56 - Next execution time: 2024-10-11 20:35:24.028369
+2024-10-11 20:35:24 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:35:24 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:35:24 - Returning go_to_url
+2024-10-11 20:35:24 - Voy a dormir -5726.04278 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:35:24 - Returning process2
+2024-10-11 20:35:24 - Next execution time: 2024-10-11 20:35:48.043604
+2024-10-11 20:35:48 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:35:48 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:35:48 - Returning go_to_url
+2024-10-11 20:35:48 - Voy a dormir -5750.06437 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:35:48 - Returning process2
+2024-10-11 20:35:48 - Next execution time: 2024-10-11 20:36:16.064558
+2024-10-11 20:36:16 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:36:16 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:36:16 - Returning go_to_url
+2024-10-11 20:36:16 - Voy a dormir -5778.081649 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:36:16 - Returning process2
+2024-10-11 20:36:16 - Next execution time: 2024-10-11 20:36:54.082268
+2024-10-11 20:36:54 - Calling process2 <driver.SeleniumDriver object at 0x105a62a50>
+2024-10-11 20:36:54 - Calling go_to_url <driver.SeleniumDriver object at 0x105a62a50>, https://prenotami.esteri.it/UserArea
+2024-10-11 20:36:54 - Returning go_to_url
+2024-10-11 20:36:54 - Voy a dormir -5816.090975 segundos hasta las 2024-10-11 18:59:58
+2024-10-11 20:36:54 - Returning process2
+2024-10-11 20:36:54 - Next execution time: 2024-10-11 20:37:27.091221

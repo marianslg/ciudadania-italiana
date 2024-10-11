@@ -48,3 +48,12 @@ class SeleniumDriver:
     def wait_for_load(self):
         while self.driver.execute_script("return document.readyState") != "complete":
             pass
+    
+    @try_except
+    def execute_script(self, url):
+        self.driver.execute_script(f"window.open('{url}');")
+    
+    @log
+    @try_except
+    def change_tab(self, tab: int):
+        self.driver.switch_to.window(self.driver.window_handles[tab])
