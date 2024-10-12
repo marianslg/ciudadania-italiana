@@ -3,3 +3,4 @@ env/*
 selenium/*
 __pycache__/*
 screenshots/*
+logs/*
