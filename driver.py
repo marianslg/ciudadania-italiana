@@ -5,8 +5,12 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from decorators import try_except
-from log import save_file
+from log import save_file, create_folder_if_not_exists
 from decorators import log
+import os
+
+SCREENSHOT_FOLDER_NAME = 'screenshots'
+
 
 class SeleniumDriver:
     def __init__(self):
@@ -41,18 +45,25 @@ class SeleniumDriver:
 
     @try_except
     def save_screenshot(self, id, step):
-        self.driver.save_screenshot(f'{id}_{step}.png')
-        save_file(f'{id}_{step}.html', self.driver.page_source)
+        screenshot_url = os.path.join(os.getcwd(), SCREENSHOT_FOLDER_NAME)
+
+        create_folder_if_not_exists(screenshot_url)
+        self.driver.save_screenshot(f'{screenshot_url}/{id}_{step}.png')
+        save_file(f'{screenshot_url}/{id}_{step}.html', self.driver.page_source)
 
     @try_except
     def wait_for_load(self):
-        while self.driver.execute_script("return document.readyState") != "complete":
+        while not self.is_load():
             pass
+
+    def is_load(self):
+        status =self.driver.execute_script("return document.readyState")
+        return  status== "complete"
     
     @try_except
     def execute_script(self, url):
         self.driver.execute_script(f"window.open('{url}');")
-    
+
     @log
     @try_except
     def change_tab(self, tab: int):

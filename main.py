@@ -18,7 +18,7 @@ def start():
 
     while True:
         try:
-            programm_execution(time, process2, driver)
+            programm_execution(time, process, driver)
 
             time = calculate_new_execution_time(10, 40)
             save_log(f'Next execution time: {time}')
@@ -37,21 +37,16 @@ def process2(driver: SeleniumDriver):
     if driver.need_login():
         driver.login()
 
-    wait_until_7()
+    # wait_until_7()
 
     for i in range(1, TRYES+1):
         driver.execute_script(PRENOTAME_BOOKING_URL)
     
-    # for i in range(6*10):
-    #     for e in range(1, TRYES+1):
-    #         # Cambia a la nueva pestaña
-    #         print(1)
-    #         driver.change_tab(e)
-    #         print(2)
-    #         time.sleep(1)
-    #         print(3)
-    #         driver.save_screenshot(f'TAB_{id}_', 'PRENOTAME_BOOKING_URL')
-    #         print(4)
+    for i in range(6*10):
+        for e in range(1, TRYES+1):
+            driver.change_tab(e)
+            if driver.is_load():
+                driver.save_screenshot(f'TAB_{id}_', 'PRENOTAME_BOOKING_URL')
 
 
         # Toma una captura de la segunda página
@@ -63,7 +58,7 @@ def process2(driver: SeleniumDriver):
 
     # jconfirm-box85508
 
-    # driver.wait_for_load()
+    driver.wait_for_load()
 
     # if not driver.are_there_turns():
     #     save_log("Sin turnos")
