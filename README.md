@@ -16,6 +16,9 @@ pip install selenium
 
 # Tareas
 [x] Guardar screenshot y codigo de cada etapa que pase.
-[] Leer ultimos mail y devolver el token OTP
-[] forzar a que ejecute el proceso a las 7 de la noche.
+[x] Leer ultimos mail y devolver el token OTP
+[x] forzar a que ejecute el proceso a las 7 de la noche.
+
+Consideraciones:
+* Es lo mismo ir a booking desde url o debo clickear el botón?
 

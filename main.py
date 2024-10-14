@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 import random
-from log import save_file, save_log
+from log import save_log, save_result_operation, get_result_operation
 import time
 from driver import SeleniumDriver
 from decorators import log, try_except
@@ -9,7 +9,7 @@ from popup import showPopup
 TRYES = 10
 PRENOTAME_USER_AREA_URL = 'https://prenotami.esteri.it/UserArea'
 PRENOTAME_BOOKING_URL = 'https://prenotami.esteri.it/Services/Booking/224'
-
+TEXT_NOT_TURNS = 'i posti disponibili per il servizio scelto sono esauriti'
 
 def start():
     driver = SeleniumDriver()
@@ -58,7 +58,7 @@ def process2(driver: SeleniumDriver):
 
     # jconfirm-box85508
 
-    driver.wait_for_load()
+    driver.wait_for_load_fully()
 
     # if not driver.are_there_turns():
     #     save_log("Sin turnos")
@@ -78,22 +78,25 @@ def process(driver: SeleniumDriver):
     if driver.need_login():
         driver.login()
 
-    if is_the_time_close():
-        wait_until_7()
+    # if is_the_time_close():
+    #     wait_until_7()
 
     driver.go_to_url(PRENOTAME_BOOKING_URL)
 
-    # jconfirm-box85508
+    driver.wait_for_load_fully()
 
-    driver.wait_for_load()
-
-    if not driver.are_there_turns():
+    # if driver.exists_id('typeofbookingddl'):
+    #     save_log("Con turnos!")
+    #     driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
+    #     save_result_operation(id.split()[0], id.split()[1], 'OK')
+    #     # showPopup("prenotami", "Con turno!")
+    if driver.exist_text(TEXT_NOT_TURNS):
         save_log("Sin turnos")
-        return
-        # showPopup("prenotami", "Sin turnos")
+        save_result_operation(id.split()[0], id.split()[1], 'FAIL')
 
+        # showPopup("prenotami", "Sin turnos")
     driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
-    showPopup("prenotami", "Con turno!")
+    print(get_result_operation())
 
 
 def calculate_new_execution_time(min_seconds, max_seconds) -> datetime:
