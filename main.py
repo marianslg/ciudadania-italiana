@@ -87,6 +87,8 @@ def process(driver: SeleniumDriver):
 
     driver.wait_for_load_fully()
 
+    time.sleep(5)
+
     if driver.exists_id(TEXT_TURN_ID):
         save_log("Con turnos!")
         driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')

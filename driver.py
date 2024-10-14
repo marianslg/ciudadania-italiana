@@ -54,10 +54,8 @@ class SeleniumDriver:
         elemento = self.driver.execute_script(f"return document.getElementById('{id}');")
 
         if elemento:
-            print(f"Elemento con ID '{id}' encontrado.")
             return True
         else:
-            print(f"Elemento con ID '{id}' no encontrado.")
             return False
         # WebDriverWait(self.driver, 2).until(
         #     EC.presence_of_element_located((By.ID, id))
