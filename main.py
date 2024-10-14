@@ -10,6 +10,8 @@ TRYES = 10
 PRENOTAME_USER_AREA_URL = 'https://prenotami.esteri.it/UserArea'
 PRENOTAME_BOOKING_URL = 'https://prenotami.esteri.it/Services/Booking/224'
 TEXT_NOT_TURNS = 'i posti disponibili per il servizio scelto sono esauriti'
+TEXT_NOT_TURNS_ID = 'WlNotAvailable'
+TEXT_TURN_ID = 'typeofbookingddl'
 
 def start():
     driver = SeleniumDriver()
@@ -85,17 +87,18 @@ def process(driver: SeleniumDriver):
 
     driver.wait_for_load_fully()
 
-    # if driver.exists_id('typeofbookingddl'):
-    #     save_log("Con turnos!")
-    #     driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
-    #     save_result_operation(id.split()[0], id.split()[1], 'OK')
-    #     # showPopup("prenotami", "Con turno!")
-    if driver.exist_text(TEXT_NOT_TURNS):
+    if driver.exists_id(TEXT_TURN_ID):
+        save_log("Con turnos!")
+        driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
+        save_result_operation(id.split()[0], id.split()[1], 'OK')
+        # showPopup("prenotami", "Con turno!")
+    elif driver.exists_id(TEXT_NOT_TURNS_ID):
         save_log("Sin turnos")
         save_result_operation(id.split()[0], id.split()[1], 'FAIL')
-
         # showPopup("prenotami", "Sin turnos")
-    driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
+    else:
+        save_result_operation(id.split()[0], id.split()[1], 'NONE')
+
     print(get_result_operation())
 
 

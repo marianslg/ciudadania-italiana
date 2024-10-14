@@ -49,10 +49,11 @@ class SeleniumDriver:
         return text in self.driver.page_source
 
     @log
-    def exists_id(self, id):
-        elementos = self.driver.find_elements(By.ID, id)  # Devuelve una lista
+    def exists_id(self, id: str):
+        # elementos = self.driver.find_element(By.ID, id)
+        elemento = self.driver.execute_script(f"return document.getElementById('{id}');")
 
-        if elementos:
+        if elemento:
             print(f"Elemento con ID '{id}' encontrado.")
             return True
         else:

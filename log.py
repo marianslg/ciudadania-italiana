@@ -28,7 +28,7 @@ def save_file(file_name, content):
 @create_folder(LOG_FOLDER)
 def save_result_operation(date, hour, result):
     with open(RESULT_FILE, 'a') as file:
-        file.write(f"{date}, {hour}, {result}\n")
+        file.write(f"{date},{hour},{result}\n")
 
 def get_result_operation():
     # Cargar los datos desde el CSV
@@ -43,10 +43,11 @@ def get_result_operation():
     # Contar cantidad de resultados "OK" y "FAIL"
     cantidad_ok = df[df["resultado"] == "OK"].shape[0]
     cantidad_fail = df[df["resultado"] == "FAIL"].shape[0]
+    cantidad_none = df[df["resultado"] == "NONE"].shape[0]
 
     # Obtener la última fecha y hora registrada
     ultima_fila = df.iloc[-1]
     ultima_fecha = ultima_fila["fecha"]
     ultima_hora = ultima_fila["hora"]
 
-    return f'TOTAL: {cantidad_total}. OK: {cantidad_ok}. FAIL: {cantidad_fail}. Última fecha: {ultima_fecha} {ultima_hora}'
+    return f'TOTAL: {cantidad_total}. OK: {cantidad_ok}. FAIL: {cantidad_fail}. NONE: {cantidad_none}. Última fecha: {ultima_fecha} {ultima_hora}'
