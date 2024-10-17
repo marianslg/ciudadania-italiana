@@ -12,9 +12,10 @@ PRENOTAME_BOOKING_URL = 'https://prenotami.esteri.it/Services/Booking/224'
 TEXT_NOT_TURNS = 'i posti disponibili per il servizio scelto sono esauriti'
 TEXT_NOT_TURNS_ID = 'WlNotAvailable'
 TEXT_TURN_ID = 'typeofbookingddl'
+TIMEOUT = 180
 
 def start():
-    driver = SeleniumDriver()
+    driver = SeleniumDriver(TIMEOUT)
 
     time  = datetime.now()
 
@@ -70,36 +71,43 @@ def process2(driver: SeleniumDriver):
     # driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
     # showPopup("prenotami", "Con turno!")
 
-@log
-@try_except
+# @log
+# @try_except
 def process(driver: SeleniumDriver):
+    from selenium.common.exceptions import TimeoutException
+
     id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    driver.go_to_url(PRENOTAME_USER_AREA_URL)
+    try:
+        driver.go_to_url(PRENOTAME_USER_AREA_URL)
 
-    if driver.need_login():
-        driver.login()
+        if driver.need_login():
+            driver.login()
 
-    # if is_the_time_close():
-    #     wait_until_7()
+        # if is_the_time_close():
+        #     wait_until_7()
 
-    driver.go_to_url(PRENOTAME_BOOKING_URL)
+        driver.go_to_url(PRENOTAME_BOOKING_URL)
 
-    driver.wait_for_load_fully()
+        driver.wait_for_load_fully()
 
-    time.sleep(5)
+        time.sleep(5)
 
-    if driver.exists_id(TEXT_TURN_ID):
-        save_log("Con turnos!")
-        driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
-        save_result_operation(id.split()[0], id.split()[1], 'OK')
-        # showPopup("prenotami", "Con turno!")
-    elif driver.exists_id(TEXT_NOT_TURNS_ID):
-        save_log("Sin turnos")
-        save_result_operation(id.split()[0], id.split()[1], 'FAIL')
-        # showPopup("prenotami", "Sin turnos")
-    else:
-        save_result_operation(id.split()[0], id.split()[1], 'NONE')
+        if driver.exists_id(TEXT_TURN_ID):
+            save_log("Con turnos!")
+            driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
+            save_result_operation(id.split()[0], id.split()[1], 'OK')
+            # showPopup("prenotami", "Con turno!")
+        elif driver.exists_id(TEXT_NOT_TURNS_ID):
+            save_log("Sin turnos")
+            save_result_operation(id.split()[0], id.split()[1], 'NO_TURNS')
+            # showPopup("prenotami", "Sin turnos")
+        else:
+            save_result_operation(id.split()[0], id.split()[1], 'UNKNOWN')
+    except TimeoutException:
+        save_result_operation(id.split()[0], id.split()[1], 'TIMEOUT')
+    except Exception as e:
+        save_result_operation(id.split()[0], id.split()[1], 'EXC')
 
     print(get_result_operation())
 

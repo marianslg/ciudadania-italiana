@@ -13,18 +13,19 @@ from decorators import log
 import os
 
 SCREENSHOT_FOLDER_NAME = 'screenshots'
-TIMEOUT = 60*5
 
 
 class SeleniumDriver:
-    def __init__(self):
+    def __init__(self, timeout=60):
         service = Service()
+        self.timeout = timeout
+
         self.config = dotenv_values(".env")
         self.driver = webdriver.Chrome(service=service)
-        self.driver.implicitly_wait(60*5)
+        self.driver.set_page_load_timeout(timeout)  # Define el timeout para cargar la página
 
-    @log
-    @try_except
+    # @log
+    # @try_except
     def go_to_url(self, url):
         self.driver.get(url)
 
@@ -80,7 +81,7 @@ class SeleniumDriver:
     def wait_for_load_fully(self):
         # while not self.is_load():
         #     pass
-        WebDriverWait(self.driver, TIMEOUT).until(
+        WebDriverWait(self.driver, self.timeout).until(
             lambda d: d.execute_script(
                 "return document.readyState") == "complete"
         )

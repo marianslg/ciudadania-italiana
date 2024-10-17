@@ -5,9 +5,9 @@ def log(func):
 
     @wraps(func)
     def wrapper(*args, **kwargs):
-        save_log(f"start {func.__name__} {", ".join(map(str, args))}")
+        # save_log(f"start {func.__name__} {", ".join(map(str, args))}")
         result = func(*args, **kwargs)
-        save_log(f"end {func.__name__}")
+        # save_log(f"end {func.__name__}")
         return result
     return wrapper
 
