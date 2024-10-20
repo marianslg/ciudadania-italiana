@@ -6,7 +6,7 @@ from driver import SeleniumDriver, next_service, Service
 from decorators import log, try_except
 from popup import showPopup
 
-TRYES = 10
+TRYES = 5
 PRENOTAME_USER_AREA_URL = 'https://prenotami.esteri.it/UserArea'
 PRENOTAME_BOOKING_URL = 'https://prenotami.esteri.it/Services/Booking/224'
 TEXT_NOT_TURNS = 'i posti disponibili per il servizio scelto sono esauriti'
@@ -62,7 +62,7 @@ def process2(service: Service):
     if driver.need_login():
         driver.login()
 
-    # wait_until_7()
+    wait_until_7()
 
     for i in range(1, TRYES+1):
         driver.open_tab(PRENOTAME_BOOKING_URL)
