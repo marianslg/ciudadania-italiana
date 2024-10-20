@@ -22,3 +22,5 @@ pip install selenium
 Consideraciones:
 * Es lo mismo ir a booking desde url o debo clickear el botón?
 
+
+

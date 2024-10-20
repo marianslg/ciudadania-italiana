@@ -27,9 +27,9 @@ def save_file(file_name, content):
 
 
 @create_folder(LOG_FOLDER)
-def save_result_operation(date, hour, result):
+def save_result_operation(date, hour, result, service):
     with open(RESULT_FILE, 'a') as file:
-        file.write(f"{date},{hour},{result}\n")
+        file.write(f"{date},{hour},{result},{service}\n")
 
 
 def get_result_operation():
@@ -37,7 +37,7 @@ def get_result_operation():
     df = pd.read_csv(RESULT_FILE, header=None)
 
     # Asignar nombres a las columnas manualmente
-    df.columns = ["fecha", "hora", "resultado"]
+    df.columns = ["fecha", "hora","resultado","service"]
 
     # Contar cantidad total de resultados
     cantidad_total = len(df)

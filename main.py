@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 import random
 from log import save_log, save_result_operation, get_result_operation
 import time
-from driver import SeleniumDriver
+from driver import SeleniumDriver, next_service, Service
 from decorators import log, try_except
 from popup import showPopup
 
@@ -14,20 +14,20 @@ TEXT_NOT_TURNS_ID = 'WlNotAvailable'
 TEXT_TURN_ID = 'typeofbookingddl'
 TIMEOUT = 180
 
+
 def start():
-    driver = SeleniumDriver(TIMEOUT)
-
-    time  = datetime.now()
-
+    service = Service.CHROME
     while True:
         try:
-            programm_execution(time, process, driver)
+            driver = SeleniumDriver(TIMEOUT, service=service)
+            service = next_service[service]
 
-            time = calculate_new_execution_time(10, 40)
-            save_log(f'Next execution time: {time}')
+            process(driver)
+
         except Exception as e:
             save_log(f'Error: {e}')
 
+        wait(10, 40)
 
 
 @log
@@ -43,14 +43,13 @@ def process2(driver: SeleniumDriver):
     # wait_until_7()
 
     for i in range(1, TRYES+1):
-        driver.execute_script(PRENOTAME_BOOKING_URL)
-    
+        driver.open_tab(PRENOTAME_BOOKING_URL)
+
     for i in range(6*10):
         for e in range(1, TRYES+1):
             driver.change_tab(e)
             if driver.is_load():
                 driver.save_screenshot(f'TAB_{id}_', 'PRENOTAME_BOOKING_URL')
-
 
         # Toma una captura de la segunda página
         # driver.save_screenshot("captura_pagina2.png")
@@ -73,10 +72,15 @@ def process2(driver: SeleniumDriver):
 
 # @log
 # @try_except
+
+
 def process(driver: SeleniumDriver):
     from selenium.common.exceptions import TimeoutException
 
     id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    date = id.split()[0]
+    time = id.split()[1]
+    result = None
 
     try:
         driver.go_to_url(PRENOTAME_USER_AREA_URL)
@@ -96,20 +100,22 @@ def process(driver: SeleniumDriver):
         if driver.exists_id(TEXT_TURN_ID):
             save_log("Con turnos!")
             driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
-            save_result_operation(id.split()[0], id.split()[1], 'OK')
+            result = 'OK'
             # showPopup("prenotami", "Con turno!")
         elif driver.exists_id(TEXT_NOT_TURNS_ID):
             save_log("Sin turnos")
-            save_result_operation(id.split()[0], id.split()[1], 'NO_TURNS')
+            result = 'NO_TURNS'
             # showPopup("prenotami", "Sin turnos")
         else:
-            save_result_operation(id.split()[0], id.split()[1], 'UNKNOWN')
+            result = 'UNKNOWN'
     except TimeoutException:
-        save_result_operation(id.split()[0], id.split()[1], 'TIMEOUT')
+        result = 'TIMEOUT'
     except Exception as e:
-        save_result_operation(id.split()[0], id.split()[1], 'EXC')
-
-    print(get_result_operation())
+        result = 'EXC'
+    finally:
+        driver.close()
+        save_result_operation(date, time, result, driver.service.name)
+        print(get_result_operation())
 
 
 def calculate_new_execution_time(min_seconds, max_seconds) -> datetime:
@@ -122,6 +128,10 @@ def calculate_new_execution_time(min_seconds, max_seconds) -> datetime:
     return future_time
 
 
+def wait(min, max):
+    time.sleep(random.randint(min, max))
+
+
 def programm_execution(execution_time, task, *args, **kwargs):
     now = datetime.now()
 
@@ -132,6 +142,7 @@ def programm_execution(execution_time, task, *args, **kwargs):
 
     task(*args, **kwargs)
 
+
 def is_the_time_close():
     actual_time = datetime.now()
 
@@ -139,13 +150,14 @@ def is_the_time_close():
     print(actual_time.hour, actual_time.minute)
     return actual_time.hour == 18 and actual_time.minute > 56
 
+
 def wait_until_7():
     actual_time = datetime.now()
-    hora_objetivo = datetime.combine(actual_time.date(), datetime.min.time()) + timedelta(hours=18, minutes=59, seconds=58)
+    hora_objetivo = datetime.combine(actual_time.date(
+    ), datetime.min.time()) + timedelta(hours=18, minutes=59, seconds=58)
     diferencia = (hora_objetivo - actual_time).total_seconds()
     save_log(f'Voy a dormir {diferencia} segundos hasta las {hora_objetivo}')
     time.sleep(diferencia)
-   
 
 
 start()

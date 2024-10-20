@@ -1,6 +1,5 @@
 from selenium import webdriver
 from dotenv import dotenv_values
-from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
@@ -12,24 +11,54 @@ from log import save_file, create_folder_if_not_exists
 from decorators import log
 import os
 
+from selenium.webdriver.chrome.service import Service as ChromeService
+from selenium.webdriver.firefox.service import Service as FirefoxService
+from selenium.webdriver.edge.service import Service as EdgeService
+from enum import Enum
+from selenium import webdriver
+
 SCREENSHOT_FOLDER_NAME = 'screenshots'
 
 
+class Service(Enum):
+    CHROME = 1
+    FIREFOX = 2
+    EDGE = 3
+
+
+chrome_service = ChromeService()
+firefox_service = FirefoxService()
+edge_service = EdgeService()
+
+next_service = {
+    Service.CHROME: Service.FIREFOX,
+    Service.FIREFOX: Service.EDGE,
+    Service.EDGE: Service.CHROME
+}
+
+
 class SeleniumDriver:
-    def __init__(self, timeout=60):
-        service = Service()
+    def __init__(self, timeout=60, show_logs=False, service=Service.CHROME):
+        if service == Service.CHROME:
+            self.driver = webdriver.Chrome(service=chrome_service)
+        elif service == Service.FIREFOX:
+            self.driver = webdriver.Firefox(service=firefox_service)
+        elif service == Service.EDGE:
+            self.driver = webdriver.Edge(service=edge_service)
+
         self.timeout = timeout
-
+        self.show_logs: bool = show_logs
         self.config = dotenv_values(".env")
-        self.driver = webdriver.Chrome(service=service)
-        self.driver.set_page_load_timeout(timeout)  # Define el timeout para cargar la página
+        self.service = service
 
-    # @log
-    # @try_except
+        self.driver.set_page_load_timeout(timeout)
+    
+    def close(self):
+        self.driver.quit()
+
     def go_to_url(self, url):
         self.driver.get(url)
 
-    @try_except
     def need_login(self):
         return "login-email" in self.driver.page_source
 
@@ -52,7 +81,8 @@ class SeleniumDriver:
     @log
     def exists_id(self, id: str):
         # elementos = self.driver.find_element(By.ID, id)
-        elemento = self.driver.execute_script(f"return document.getElementById('{id}');")
+        elemento = self.driver.execute_script(
+            f"return document.getElementById('{id}');")
 
         if elemento:
             return True
@@ -92,7 +122,7 @@ class SeleniumDriver:
         return status == "complete"
 
     @try_except
-    def execute_script(self, url):
+    def open_tab(self, url):
         self.driver.execute_script(f"window.open('{url}');")
 
     @log
