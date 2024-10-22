@@ -22,5 +22,14 @@ pip install selenium
 Consideraciones:
 * Es lo mismo ir a booking desde url o debo clickear el botón?
 
+[] Proceso que corra siempre a las 7 ya que me olvido de hacerlo.
+[] hacerlo desde el boton.
+[] menos pensatñas
+[] detectar cuando ya se guardo un screenshot y no hacer loop.
+[] guardar resultados. cuando se ejecuto, tiempo, resultado.
+[] en windows se cuelga
+[] crear un proceso que lo ejecute todos los dias
+[] ejecutar accion a la hora correcta. ademas guardar cuando se ejcuto
+
 
 

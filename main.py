@@ -65,20 +65,27 @@ def process2(service: Service):
     wait_until_7()
 
     for i in range(1, TRYES+1):
+        time.sleep(0.2)
         driver.open_tab(PRENOTAME_BOOKING_URL)
 
-    for i in range(6*10):
-        for e in range(1, TRYES+1):
-            driver.change_tab(e)
-            if driver.is_load():
-                driver.save_screenshot(f'TAB_{service.name}_{id}_', 'PRENOTAME_BOOKING_URL')
+    time.sleep(60*10)
+
+    for e in range(1, TRYES+1):
+        driver.change_tab(e)
+        driver.save_screenshot(f'TAB_{e}_{service.name}_{id}_', 'PRENOTAME_BOOKING_URL')
+
+    # for i in range(6*10):
+    #     for e in range(1, TRYES+1):
+    #         driver.change_tab(e)
+    #         if driver.is_load():
+    #             driver.save_screenshot(f'TAB_{service.name}_{id}_', 'PRENOTAME_BOOKING_URL')
 
         # Toma una captura de la segunda página
         # driver.save_screenshot("captura_pagina2.png")
 
     # driver.go_to_url(PRENOTAME_BOOKING_URL)
 
-    time.sleep(60*10)
+    time.sleep(60*1000)
 
     # jconfirm-box85508
 
