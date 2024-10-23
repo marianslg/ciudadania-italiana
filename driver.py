@@ -1,6 +1,6 @@
 from selenium import webdriver
 from dotenv import dotenv_values
-from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
@@ -16,6 +16,10 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.edge.service import Service as EdgeService
 from enum import Enum
 from selenium import webdriver
+import time
+
+from selenium.webdriver.edge.options import Options as EdgeOptions
+
 
 SCREENSHOT_FOLDER_NAME = 'screenshots'
 
@@ -40,11 +44,21 @@ next_service = {
 class SeleniumDriver:
     def __init__(self, timeout=60, show_logs=False, service=Service.CHROME):
         if service == Service.CHROME:
-            self.driver = webdriver.Chrome(service=chrome_service)
+            chrome_options = ChromeOptions()
+            chrome_options.add_argument("--disable-gpu")
+            chrome_options.add_argument("--no-sandbox")
+            chrome_options.add_argument("--disable-dev-shm-usage")
+            chrome_options.add_argument("--incognito")
+            self.driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
         elif service == Service.FIREFOX:
             self.driver = webdriver.Firefox(service=firefox_service)
         elif service == Service.EDGE:
-            self.driver = webdriver.Edge(service=edge_service)
+            egde_options = EdgeOptions()
+            egde_options.add_argument("--inprivate")
+            egde_options.add_argument("--disable-gpu")
+            egde_options.add_argument("--no-sandbox")
+            egde_options.add_argument("--disable-dev-shm-usage")
+            self.driver = webdriver.Edge(service=edge_service, options=egde_options)
 
         self.timeout = timeout
         self.show_logs: bool = show_logs
@@ -67,10 +81,10 @@ class SeleniumDriver:
     def login(self):
         user_elem = self.driver.find_element(By.ID, "login-email")
         user_elem.send_keys(self.config.get("EMAIL"))
-        # time.sleep(1)
+        time.sleep(1)
         password_elem = self.driver.find_element(By.ID, "login-password")
         password_elem.send_keys(self.config.get("PRENOTAME_PASSWORD"))
-        # time.sleep(1)
+        time.sleep(1)
         password_elem.send_keys(Keys.RETURN)
 
     @log

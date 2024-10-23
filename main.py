@@ -25,7 +25,7 @@ def start_process_day():
             process(driver)
 
         except Exception as e:
-            save_log(f'Error: {e}')
+            print(f'Error: {e}')
 
         wait(10, 40)
 
@@ -62,7 +62,7 @@ def process2(service: Service):
     if driver.need_login():
         driver.login()
 
-    wait_until_7()
+    # wait_until_7()
 
     for i in range(1, TRYES+1):
         time.sleep(0.2)
@@ -85,11 +85,11 @@ def process2(service: Service):
 
     # driver.go_to_url(PRENOTAME_BOOKING_URL)
 
-    time.sleep(60*1000)
+    # time.sleep(60*1000)
 
     # jconfirm-box85508
 
-    driver.wait_for_load_fully()
+    # driver.wait_for_load_fully()
 
     # if not driver.are_there_turns():
     #     save_log("Sin turnos")
