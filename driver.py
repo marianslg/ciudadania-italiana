@@ -68,7 +68,7 @@ class SeleniumDriver:
             self.driver = webdriver.Firefox(service=firefox_service)
         elif service == Service.EDGE:
             egde_options = EdgeOptions()
-            egde_options.add_argument("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36 Edg/117.0.2045.43")
+            egde_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36 Edg/117.0.2045.43")
             egde_options.add_argument("--inprivate")
             egde_options.add_argument("--disable-gpu")
             egde_options.add_argument("--no-sandbox")

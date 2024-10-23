@@ -57,12 +57,14 @@ def process2(service: Service):
 
     id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    driver.go_to_url(PRENOTAME_USER_AREA_URL)
+    login_and_service(driver)
 
-    if driver.need_login():
-        driver.login()
+    driver.click_prenota()
+    driver.wait_for_load_fully()
 
-    # wait_until_7()
+    wait_until_7()
+
+    driver.click_prenota()
 
     for i in range(1, TRYES+1):
         time.sleep(0.2)
@@ -103,9 +105,21 @@ def process2(service: Service):
 # @try_except
 
 
+def login_and_service(driver: SeleniumDriver):
+    driver.go_to_url(PRENOTAME_USER_AREA_URL)
+
+    if driver.need_login():
+        time.sleep(2)
+        driver.login()
+
+    time.sleep(5)
+    driver.click_services()
+    driver.wait_for_load_fully()
+    time.sleep(5)
+
+
 def process(driver: SeleniumDriver):
     from selenium.common.exceptions import TimeoutException
-
 
     _id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
     _date = _id.split()[0]
@@ -113,16 +127,7 @@ def process(driver: SeleniumDriver):
     _result = None
 
     try:
-        driver.go_to_url(PRENOTAME_USER_AREA_URL)
-
-        if driver.need_login():
-            time.sleep(2)
-            driver.login()
-
-        time.sleep(5)
-        driver.click_services()
-        driver.wait_for_load_fully()
-        time.sleep(5)
+        login_and_service(driver)
 
         driver.click_prenota()
         driver.wait_for_load_fully()
