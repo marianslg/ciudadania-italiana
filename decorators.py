@@ -17,7 +17,9 @@ def try_except(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            raise Exception(f"Error en la función '{func.__name__}' del tipo '{type(e)}': {str(e)}")
+            error= f"{func.__name__} type {e.__class__.__name__}: {str(e)[:200] + '...'}"
+            print(error)
+            raise Exception(error)
     
     return wrapper
 

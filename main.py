@@ -106,44 +106,48 @@ def process2(service: Service):
 def process(driver: SeleniumDriver):
     from selenium.common.exceptions import TimeoutException
 
-    id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    date = id.split()[0]
-    time = id.split()[1]
-    result = None
+
+    _id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    _date = _id.split()[0]
+    _time = _id.split()[1]
+    _result = None
 
     try:
         driver.go_to_url(PRENOTAME_USER_AREA_URL)
 
         if driver.need_login():
+            time.sleep(2)
             driver.login()
 
-        # if is_the_time_close():
-        #     wait_until_7()
-
-        driver.go_to_url(PRENOTAME_BOOKING_URL)
-
+        time.sleep(5)
+        driver.click_services()
         driver.wait_for_load_fully()
+        time.sleep(5)
 
+        driver.click_prenota()
+        driver.wait_for_load_fully()
         time.sleep(5)
 
         if driver.exists_id(TEXT_TURN_ID):
             save_log("Con turnos!")
-            driver.save_screenshot(id, 'PRENOTAME_BOOKING_URL')
-            result = 'OK'
+            driver.save_screenshot(_id, 'PRENOTAME_BOOKING_URL')
+            _result = 'OK'
             # showPopup("prenotami", "Con turno!")
         elif driver.exists_id(TEXT_NOT_TURNS_ID):
             save_log("Sin turnos")
-            result = 'NO_TURNS'
+            _result = 'NO_TURNS'
             # showPopup("prenotami", "Sin turnos")
         else:
-            result = 'UNKNOWN'
+            _result = 'UNKNOWN'
     except TimeoutException:
-        result = 'TIMEOUT'
+        _result = 'TIMEOUT'
     except Exception as e:
-        result = 'EXC'
+        driver.save_screenshot(_id, 'Exception')
+        _result = 'EXC'
+        time.sleep(10)
     finally:
         driver.close()
-        save_result_operation(date, time, result, driver.service.name)
+        save_result_operation(_date, _time, _result, driver.service.name)
         print(get_result_operation())
 
 
