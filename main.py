@@ -34,8 +34,8 @@ def start_process_7():
     import multiprocessing
 
     try:
-        p1 = multiprocessing.Process(target=process2, args=(Service.CHROME,))
-        p2 = multiprocessing.Process(target=process2, args=(Service.EDGE,))
+        p1 = multiprocessing.Process(target=process_seven, args=(Service.CHROME,))
+        p2 = multiprocessing.Process(target=process_seven, args=(Service.EDGE,))
 
         # Iniciar procesos
         p1.start()
@@ -51,18 +51,15 @@ def start_process_7():
 
 @log
 @try_except
-def process2(service: Service):
-    print(service.name)
+def process_seven(service: Service):
     driver = SeleniumDriver(TIMEOUT, service=service)
 
     id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
     login_and_service(driver)
 
-    driver.click_prenota()
-    driver.wait_for_load_fully()
-
-    wait_until_7()
+    # wait_until(18,59,58)
+    wait_until(17,20,00)
 
     driver.click_prenota()
 
@@ -113,6 +110,11 @@ def login_and_service(driver: SeleniumDriver):
         driver.login()
 
     time.sleep(5)
+
+    if (driver.is_unavailable()):
+        print("Unavailable")
+        raise Exception("Unavailable")
+    
     driver.click_services()
     driver.wait_for_load_fully()
     time.sleep(5)
@@ -189,10 +191,10 @@ def is_the_time_close():
     return actual_time.hour == 18 and actual_time.minute > 56
 
 
-def wait_until_7():
+def wait_until(hours, minutes, seconds):
     actual_time = datetime.now()
     hora_objetivo = datetime.combine(actual_time.date(
-    ), datetime.min.time()) + timedelta(hours=18, minutes=59, seconds=58)
+    ), datetime.min.time()) + timedelta(hours=hours, minutes=minutes, seconds=seconds)
     diferencia = (hora_objetivo - actual_time).total_seconds()
     print(f'Voy a dormir {diferencia} segundos hasta las {hora_objetivo}')
     time.sleep(diferencia)

@@ -49,31 +49,35 @@ class SeleniumDriver:
     def __init__(self, timeout=60, show_logs=False, service=Service.CHROME):
         if service == Service.CHROME:
             chrome_options = ChromeOptions()
-            chrome_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36")
+            chrome_options.add_argument(
+                "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36")
             chrome_options.add_argument("--disable-gpu")
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--incognito")
-            self.driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
+            self.driver = webdriver.Chrome(
+                service=chrome_service, options=chrome_options)
 
             stealth(self.driver,
-                languages=["en-US", "en"],
-                vendor="Google Inc.",
-                platform="Win32",
-                webgl_vendor="Intel Inc.",
-                renderer="Intel Iris OpenGL Engine",
-                fix_hairline=True)
+                    languages=["en-US", "en"],
+                    vendor="Google Inc.",
+                    platform="Win32",
+                    webgl_vendor="Intel Inc.",
+                    renderer="Intel Iris OpenGL Engine",
+                    fix_hairline=True)
 
         elif service == Service.FIREFOX:
             self.driver = webdriver.Firefox(service=firefox_service)
         elif service == Service.EDGE:
             egde_options = EdgeOptions()
-            egde_options.add_argument("user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36 Edg/117.0.2045.43")
+            egde_options.add_argument(
+                "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36 Edg/117.0.2045.43")
             egde_options.add_argument("--inprivate")
             egde_options.add_argument("--disable-gpu")
             egde_options.add_argument("--no-sandbox")
             egde_options.add_argument("--disable-dev-shm-usage")
-            self.driver = webdriver.Edge(service=edge_service, options=egde_options)
+            self.driver = webdriver.Edge(
+                service=edge_service, options=egde_options)
 
             # stealth(self.driver,
             #     languages=["en-US", "en"],
@@ -89,7 +93,7 @@ class SeleniumDriver:
         self.service = service
 
         self.driver.set_page_load_timeout(timeout)
-    
+
     def close(self):
         self.driver.quit()
 
@@ -100,20 +104,26 @@ class SeleniumDriver:
     @try_except
     def need_login(self):
         return "login-email" in self.driver.page_source
-    
+
     @try_except
     def click_services(self):
         advanced_link = self.driver.find_element(By.ID, "advanced")
         advanced_link.click()
-    
+
+    @try_except
+    def is_unavailable(self):
+        return "Unavailable" in self.driver.find_element(By.TAG_NAME, "body").text
+
     @try_except
     def click_prenota(self):
-        button = self.driver.find_element(By.XPATH, "//tr[td[contains(text(),'Ricostruzione Cittadinanza')]]//button[@class='button primary']")
+        button = self.driver.find_element(
+            By.XPATH, "//tr[td[contains(text(),'Ricostruzione Cittadinanza')]]//button[@class='button primary']")
         button.click()
 
     @try_except
     def login(self):
-        self.driver.execute_script("Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
+        self.driver.execute_script(
+            "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         user_elem = self.driver.find_element(By.ID, "login-email")
         user_elem.send_keys(self.config.get("EMAIL"))
         time.sleep(1)
