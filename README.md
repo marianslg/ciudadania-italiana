@@ -22,6 +22,8 @@ pip install selenium
 Consideraciones:
 * Es lo mismo ir a booking desde url o debo clickear el botón?
 
+[] guardar metricas para saber cuando devuelve unaviable 
+[] dormir mas cuando devuelve unaviable.
 [] validar primera parte. evitar sleeps. intenar 3 veecs sino matar proceso.
 [] Proceso que corra siempre a las 7 ya que me olvido de hacerlo.
 [x] hacerlo desde el boton.
@@ -31,6 +33,7 @@ Consideraciones:
 [x] en windows se cuelga
 [] crear un proceso que lo ejecute todos los dias
 [] ejecutar accion a la hora correcta. ademas guardar cuando se ejcuto
+[] No guardar screenshot cuando hay err_connection 
 
 
 

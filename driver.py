@@ -87,7 +87,7 @@ class SeleniumDriver:
             #     renderer="Intel Iris OpenGL Engine",
             #     fix_hairline=True)
 
-        self.timeout = timeout
+        # self.timeout = timeout
         self.show_logs: bool = show_logs
         self.config = dotenv_values(".env")
         self.service = service
@@ -114,7 +114,7 @@ class SeleniumDriver:
     def is_unavailable(self):
         return "Unavailable" in self.driver.find_element(By.TAG_NAME, "body").text
 
-    @try_except
+    # @try_except
     def click_prenota(self):
         button = self.driver.find_element(
             By.XPATH, "//tr[td[contains(text(),'Ricostruzione Cittadinanza')]]//button[@class='button primary']")
@@ -126,34 +126,36 @@ class SeleniumDriver:
             "Object.defineProperty(navigator, 'webdriver', {get: () => undefined})")
         user_elem = self.driver.find_element(By.ID, "login-email")
         user_elem.send_keys(self.config.get("EMAIL"))
-        time.sleep(1)
         password_elem = self.driver.find_element(By.ID, "login-password")
         password_elem.send_keys(self.config.get("PRENOTAME_PASSWORD"))
         time.sleep(1)
         password_elem.send_keys(Keys.RETURN)
 
     @try_except
-    def exist_text(self, text):
-        return text in self.driver.page_source
+    def exist_text(self, text, timeout=0):
+        if timeout > 0:
+            try:
+                return WebDriverWait(self.driver, timeout).until(
+                    EC.text_to_be_present_in_element(
+                        (By.XPATH, "//body"), text)
+                )
+            except:
+                return False
+        else:
+            return text in self.driver.page_source
 
     @try_except
-    def exists_id(self, id: str):
-        # elementos = self.driver.find_element(By.ID, id)
-        elemento = self.driver.execute_script(
-            f"return document.getElementById('{id}');")
-
-        if elemento:
-            return True
+    def exists_id(self, id: str, timeout=0):
+        if timeout > 0:
+            try:
+                return WebDriverWait(self.driver, timeout).until(
+                    EC.presence_of_element_located((By.ID, id))
+                )
+            except:
+                return False
         else:
-            return False
-        # WebDriverWait(self.driver, 2).until(
-        #     EC.presence_of_element_located((By.ID, id))
-        # )
-        # try:
-        #     elemento = self.driver.find_element("id", id)
-        #     return True
-        # except:
-        #     return False
+            return bool(self.driver.execute_script(
+                f"return document.getElementById('{id}');"))
 
     @try_except
     def save_screenshot(self, id, step):
@@ -173,11 +175,24 @@ class SeleniumDriver:
                 "return document.readyState") == "complete"
         )
 
-    @try_except
-    def is_load(self):
-        status = self.driver.execute_script("return document.readyState")
-        print(status)
-        return status == "complete"
+    def is_load(self, timeout=1):
+        try:
+            print(f'is_load: {timeout}')
+            # WebDriverWait(self.driver, timeout).until(
+            #     EC.presence_of_element_located((By.TAG_NAME, "body"))
+            # )
+
+            if self.driver.find_element(By.TAG_NAME, "body"):
+                print("El elemento <body> ha sido cargado.")
+                return True
+
+            print("El elemento <body> ha sido cargado.")
+            print(f'is_load: {timeout}')
+
+            return True
+        except:
+            print("Timeout alcanzado; la página no terminó de cargar.")
+            return False
 
     @try_except
     def open_tab(self, url):

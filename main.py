@@ -5,6 +5,7 @@ import time
 from driver import SeleniumDriver, next_service, Service
 from decorators import log, try_except
 from popup import showPopup
+from enum import Enum
 
 TRYES = 5
 PRENOTAME_USER_AREA_URL = 'https://prenotami.esteri.it/UserArea'
@@ -12,8 +13,9 @@ PRENOTAME_BOOKING_URL = 'https://prenotami.esteri.it/Services/Booking/224'
 TEXT_NOT_TURNS = 'i posti disponibili per il servizio scelto sono esauriti'
 TEXT_NOT_TURNS_ID = 'WlNotAvailable'
 TEXT_TURN_ID = 'typeofbookingddl'
+ERROR_ID = 'error-information-popup-container'
 TIMEOUT = 180
-
+SLEEP_EVERY_TAB = 0.3
 
 def start_process_day():
     service = Service.CHROME
@@ -34,44 +36,75 @@ def start_process_7():
     import multiprocessing
 
     try:
-        p1 = multiprocessing.Process(target=process_seven, args=(Service.CHROME,))
-        p2 = multiprocessing.Process(target=process_seven, args=(Service.EDGE,))
+        p1 = multiprocessing.Process(
+            target=process_seven, args=(Service.CHROME,))
+        p2 = multiprocessing.Process(
+            target=process_seven, args=(Service.EDGE,))
 
-        # Iniciar procesos
         p1.start()
         p2.start()
 
-        # Esperar a que los procesos terminen
         p1.join()
         p2.join()
 
     except Exception as e:
         print(f'Error: {e}')
 
+def print_execution(service, executions):
+    for execution in executions:
+        print(f"{service} Tab: {execution['tab']}, Start: {execution['start']}, Finish: {execution['finish']} result: {execution['result']}")
 
-@log
 @try_except
 def process_seven(service: Service):
+    executions = []
+
     driver = SeleniumDriver(TIMEOUT, service=service)
 
     id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    login_and_service(driver)
+    if login_and_go_to_service(driver) == LoginResult.UNAVAILABLE:
+        print(service.name, f'Unavailable')
+        return
 
     # wait_until(18,59,58)
-    wait_until(17,20,00)
+    wait_until(20,16,59)
 
-    driver.click_prenota()
 
     for i in range(1, TRYES+1):
-        time.sleep(0.2)
+        time.sleep(SLEEP_EVERY_TAB)
+        executions.append({'tab': i, 'start': datetime.now(),
+                          'finish': None, 'isFinished': False, 'result': None})
         driver.open_tab(PRENOTAME_BOOKING_URL)
 
-    time.sleep(60*10)
+    # driver.click_prenota()
 
-    for e in range(1, TRYES+1):
-        driver.change_tab(e)
-        driver.save_screenshot(f'TAB_{e}_{service.name}_{id}_', 'PRENOTAME_BOOKING_URL')
+    # time.sleep(60*10)
+    print_execution(service.name, executions)
+
+    for e in range(0, len(executions)):
+        print(service.name, f'Execution {e}')
+        if (not executions[e]['isFinished']):
+            print(service.name,f'change_tab: {e}')
+            driver.change_tab(e+1)
+            print(service.name,f'change_tab end: {e}')
+
+            if driver.is_load(1):
+                print(service.name, f'if isload {e}')
+                executions[e]['finish'] = datetime.now()
+                executions[e]['isFinished'] = True
+                executions[e]['result'] = get_result_prenota(driver).name
+                driver.save_screenshot(f'{id}_TAB_{e}_{service.name}', '')
+                print(service.name, f'if isload end {e}')
+
+            time.sleep(1)
+        
+        if all(item['isFinished'] for item in executions):
+            print(service.name, f'isFinished {e}')
+            break
+    
+    print_execution(service.name, executions)
+
+    time.sleep(10000)
 
     # for i in range(6*10):
     #     for e in range(1, TRYES+1):
@@ -102,23 +135,49 @@ def process_seven(service: Service):
 # @try_except
 
 
-def login_and_service(driver: SeleniumDriver):
-    driver.go_to_url(PRENOTAME_USER_AREA_URL)
+class PRENOTA_RESULT(Enum):
+    OK = 1
+    ERROR_CONNECTION_RESET = 2
+    NO_TURNS = 3
+    UNKNOWN = 4
 
-    if driver.need_login():
-        time.sleep(2)
-        driver.login()
 
-    time.sleep(5)
 
-    if (driver.is_unavailable()):
-        print("Unavailable")
-        raise Exception("Unavailable")
-    
-    driver.click_services()
-    driver.wait_for_load_fully()
-    time.sleep(5)
+def get_result_prenota(driver: SeleniumDriver, timeout=0) -> PRENOTA_RESULT:
+    if driver.exists_id(TEXT_TURN_ID, timeout):
+        return PRENOTA_RESULT.OK
+    elif driver.exists_id(TEXT_NOT_TURNS_ID, timeout):
+        return PRENOTA_RESULT.NO_TURNS
+    elif driver.exists_id(ERROR_ID, timeout):
+        return PRENOTA_RESULT.ERROR_CONNECTION_RESET
+    else:
+        return PRENOTA_RESULT.UNKNOWN
 
+class LoginResult(Enum):
+    OK = 1
+    UNAVAILABLE = 2
+    UNKNOWN = 3
+
+def login_and_go_to_service(driver: SeleniumDriver) -> LoginResult:
+    try:
+        driver.go_to_url(PRENOTAME_USER_AREA_URL)
+
+        if driver.need_login():
+            time.sleep(2)
+            driver.login()
+
+        time.sleep(5)
+
+        if (driver.is_unavailable()):
+            return LoginResult.UNAVAILABLE
+
+        driver.click_services()
+        driver.wait_for_load_fully()
+        time.sleep(5)
+
+        return LoginResult.OK
+    except Exception as e:
+        return LoginResult.UNKNOWN
 
 def process(driver: SeleniumDriver):
     from selenium.common.exceptions import TimeoutException
@@ -129,7 +188,7 @@ def process(driver: SeleniumDriver):
     _result = None
 
     try:
-        login_and_service(driver)
+        login_and_go_to_service(driver)
 
         driver.click_prenota()
         driver.wait_for_load_fully()
@@ -196,5 +255,9 @@ def wait_until(hours, minutes, seconds):
     hora_objetivo = datetime.combine(actual_time.date(
     ), datetime.min.time()) + timedelta(hours=hours, minutes=minutes, seconds=seconds)
     diferencia = (hora_objetivo - actual_time).total_seconds()
-    print(f'Voy a dormir {diferencia} segundos hasta las {hora_objetivo}')
-    time.sleep(diferencia)
+
+    if(diferencia > 0):
+        print(f'Voy a dormir {diferencia} segundos hasta las {hora_objetivo}')
+        time.sleep(diferencia)
+    else:
+        print(f'No voy a dormir, ya paso la hora {hora_objetivo}')
