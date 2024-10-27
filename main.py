@@ -67,7 +67,7 @@ def process_seven(service: Service):
         return
 
     # wait_until(18,59,58)
-    wait_until(20,16,59)
+    wait_until(18,49,59)
 
 
     for i in range(1, TRYES+1):
