@@ -22,7 +22,9 @@ pip install selenium
 Consideraciones:
 * Es lo mismo ir a booking desde url o debo clickear el botón?
 
-[] guardar metricas para saber cuando devuelve unaviable 
+[] en windows rompe el nombre del arhicvo.
+[] tengo que seguir buscando una forma de validar si una pagina se cargo
+[x] guardar metricas para saber cuando devuelve unaviable 
 [] dormir mas cuando devuelve unaviable.
 [] validar primera parte. evitar sleeps. intenar 3 veecs sino matar proceso.
 [] Proceso que corra siempre a las 7 ya que me olvido de hacerlo.

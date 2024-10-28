@@ -60,14 +60,13 @@ def process_seven(service: Service):
 
     driver = SeleniumDriver(TIMEOUT, service=service)
 
-    id = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+    id = datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
 
     if login_and_go_to_service(driver) == LoginResult.UNAVAILABLE:
         print(service.name, f'Unavailable')
         return
 
-    # wait_until(18,59,58)
-    wait_until(18,49,59)
+    wait_until(18,59,59)
 
 
     for i in range(1, TRYES+1):
