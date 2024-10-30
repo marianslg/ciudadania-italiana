@@ -38,7 +38,7 @@ def get_time(hours, minutes, seconds):
     return datetime.combine(actual_time.date(
         ), datetime.min.time()) + timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
-def start_process_7(num_processes = 1):
+def start_process_7(num_processes = 5):
     import multiprocessing
 
     # EDGE Tab: 1, Start: 2024-10-28 18:59:58.313707, Finish: 2024-10-28 19:01:24.057974 result: ERROR_CONNECTION_RESET
@@ -137,7 +137,8 @@ def process_seven(service: Service, execution_time, id):
         print(service.name, f'Unavailable')
         return
 
-    # sleep_until(execution_time)
+    sleep_until(execution_time)
+
     log.info(f'Execution programming: {execution_time}. Execution date: {datetime.now()}')
 
     driver.go_to_url(PRENOTAME_BOOKING_URL)
@@ -169,7 +170,7 @@ def process_seven(service: Service, execution_time, id):
         driver.complete_and_send_form(otp, NOTE)
     except Exception as e:
         pass
-    
+
     time.sleep(60)
 
     driver.save_screenshot(id, 'DESP_OTP')
