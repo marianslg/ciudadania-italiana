@@ -17,7 +17,7 @@ from selenium.webdriver.edge.service import Service as EdgeService
 from enum import Enum
 from selenium import webdriver
 import time
-
+from datetime import datetime
 from selenium.webdriver.edge.options import Options as EdgeOptions
 from selenium_stealth import stealth
 
@@ -45,8 +45,9 @@ next_service = {
 
 
 class SeleniumDriver:
+
     @try_except
-    def __init__(self, timeout=60, show_logs=False, service=Service.CHROME):
+    def __init__(self, timeout=60, show_logs=False, service=Service.CHROME, log = None):
         if service == Service.CHROME:
             chrome_options = ChromeOptions()
             chrome_options.add_argument(
@@ -91,6 +92,7 @@ class SeleniumDriver:
         self.show_logs: bool = show_logs
         self.config = dotenv_values(".env")
         self.service = service
+        self.log = log
 
         self.driver.set_page_load_timeout(timeout)
 
@@ -161,21 +163,62 @@ class SeleniumDriver:
     def save_screenshot(self, id, step):
         screenshot_url = os.path.join(os.getcwd(), SCREENSHOT_FOLDER_NAME)
 
+        dt = datetime.now().strftime('%Y_%m_%d_%H_%M_%S')
+
         create_folder_if_not_exists(screenshot_url)
-        self.driver.save_screenshot(f'{screenshot_url}/{id}_{step}.png')
+        self.driver.save_screenshot(f'{screenshot_url}/{dt}_{id}_{step}.png')
         save_file(f'{screenshot_url}/{id}_{step}.html',
                   self.driver.page_source)
 
     @try_except
-    def wait_for_load_fully(self):
+    def wait_for_load_fully(self, timeout=60*5):
         # while not self.is_load():
         #     pass
-        WebDriverWait(self.driver, self.timeout).until(
+        WebDriverWait(self.driver, timeout).until(
             lambda d: d.execute_script(
                 "return document.readyState") == "complete"
         )
 
+    def is_OTP_button(self, timeout=1):
+        try:
+            element = WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located((By.ID, "otp-send"))
+            )
+            return element
+        except:
+            return None
+
     def is_load(self, timeout=1):
+        result = None
+        TEXT_NOT_TURNS_ID = 'WlNotAvailable'
+        TEXT_TURN_ID = 'typeofbookingddl'
+        ERROR_ID = 'error-information-popup-container'
+
+        try:
+            element = WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located((By.ID, TEXT_NOT_TURNS_ID))
+            )
+            return 'NO TURNS'
+        except:
+            pass
+
+        try:
+            element = WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located((By.ID, ERROR_ID))
+            )
+            return 'ERROR CONNECTION'
+        except:
+            pass
+
+        try:
+            element = WebDriverWait(self.driver, timeout).until(
+                EC.presence_of_element_located((By.ID, "otp-send"))
+            )
+            return element
+        except:
+            return None
+
+    def _is_load(self, timeout=1):
         try:
             print(f'is_load: {timeout}')
             # WebDriverWait(self.driver, timeout).until(
@@ -201,3 +244,42 @@ class SeleniumDriver:
     @try_except
     def change_tab(self, tab: int):
         self.driver.switch_to.window(self.driver.window_handles[tab])
+
+    @try_except
+    def complete_and_send_form(self, otp, note):
+        wait = WebDriverWait(self.driver, 60)
+
+        self.log.info('Tipo Prenotazione')
+        tipo_prenotazione = wait.until(
+            EC.presence_of_element_located((By.ID, 'typeofbookingddl')))
+        tipo_prenotazione.click()
+        # Selecciona la opción "Prenotazione Singola"
+        tipo_prenotazione.send_keys(Keys.ARROW_DOWN)
+        tipo_prenotazione.send_keys(Keys.RETURN)
+
+        time.sleep(0.5)
+
+        self.log.info('Note per la sede')
+
+        # Agrega una nota en "Note per la sede"
+        note_field = self.driver.find_element(By.ID, 'BookingNotes')
+        note_field.send_keys(note)
+
+        time.sleep(0.5)
+        self.log.info('OTP')
+
+        # Introduce el código OTP (si lo tienes)
+        otp_input = self.driver.find_element(By.ID, 'otp-input')
+        otp_input.send_keys(otp)  # Reemplaza con el código OTP real
+        time.sleep(0.5)
+        self.log.info('Acepta la política de privacidad')
+
+        # Acepta la política de privacidad
+        privacy_checkbox = self.driver.find_element(By.ID, 'PrivacyCheck')
+        privacy_checkbox.click()
+        time.sleep(0.5)
+        self.log.info('Send!')
+
+        # Envía el formulario
+        submit_button = self.driver.find_element(By.ID, 'btnAvanti')
+        submit_button.click()

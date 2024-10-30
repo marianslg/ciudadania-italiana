@@ -9,12 +9,17 @@ IMAP_SERVER = 'imap.gmail.com'
 
 @try_except
 def get_OTP():
-    for mail in get_unseen_emails:
+    mails = get_unseen_emails()
+    for mail in mails:
         if "OTP Code:" in mail:
-            return int(mail.split("OTP Code:")[1])
+            return mail.split("OTP Code:")[1]
+    
+    return None
 
 @try_except
 def get_unseen_emails():
+    from datetime import datetime, timedelta
+ 
     config = dotenv_values(".env")
     mail = imaplib.IMAP4_SSL(IMAP_SERVER)
 
@@ -22,14 +27,16 @@ def get_unseen_emails():
 
     mail.select("inbox")
 
-    status, messages = mail.search(None, '(UNSEEN)')
+    yesterday = (datetime.now() - timedelta(days=1)).strftime('%d-%b-%Y')  
+
+    status, messages = mail.search(None, f'(FROM "noreply-prenotami@esteri.it" SINCE {yesterday})')
 
     mails = []
 
     mail_ids = messages[0].split()
 
     if mail_ids:
-        for mail_id in mail_ids:
+        for mail_id in mail_ids[::-1]:
             status, msg_data = mail.fetch(mail_id, '(RFC822)')
 
             for response_part in msg_data:
@@ -52,17 +59,12 @@ def get_unseen_emails():
                                 try:
                                     body = part.get_payload(
                                     decode=True).decode()
-                                    print("Contenido del correo:")
                                     mails.append(body)
                                 except:
                                     pass
                     else:
-                        content_type = msg.get_content_type()
                         body = msg.get_payload(decode=True).decode()
-                        mails.append(body)
+                        if body.startswith("OTP Code"):
+                            mails.append(body)
     
     return mails
-
-
-
-
