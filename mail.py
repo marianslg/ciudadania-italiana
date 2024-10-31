@@ -28,8 +28,9 @@ def get_unseen_emails():
     mail.select("inbox")
 
     yesterday = (datetime.now() - timedelta(days=1)).strftime('%d-%b-%Y')  
+    today = (datetime.now()).strftime('%d-%b-%Y')
 
-    status, messages = mail.search(None, f'(FROM "noreply-prenotami@esteri.it" SINCE {yesterday})')
+    status, messages = mail.search(None, f'(FROM "noreply-prenotami@esteri.it" SINCE {today})')
 
     mails = []
 

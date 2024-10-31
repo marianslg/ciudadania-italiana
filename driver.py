@@ -245,17 +245,21 @@ class SeleniumDriver:
     def change_tab(self, tab: int):
         self.driver.switch_to.window(self.driver.window_handles[tab])
 
+    
+    def abrir_archivo(self, file_path):
+        self.driver.get("file://" + file_path)  # Accede al archivo HTML local
+
     @try_except
     def complete_and_send_form(self, otp, note):
         wait = WebDriverWait(self.driver, 60)
 
-        self.log.info('Tipo Prenotazione')
-        tipo_prenotazione = wait.until(
-            EC.presence_of_element_located((By.ID, 'typeofbookingddl')))
-        tipo_prenotazione.click()
-        # Selecciona la opción "Prenotazione Singola"
-        tipo_prenotazione.send_keys(Keys.ARROW_DOWN)
-        tipo_prenotazione.send_keys(Keys.RETURN)
+        # self.log.info('Tipo Prenotazione')
+        # tipo_prenotazione = wait.until(
+        #     EC.presence_of_element_located((By.ID, 'typeofbookingddl')))
+        # tipo_prenotazione.click()
+        # # Selecciona la opción "Prenotazione Singola"
+        # tipo_prenotazione.send_keys(Keys.ARROW_DOWN)
+        # tipo_prenotazione.send_keys(Keys.RETURN)
 
         time.sleep(0.5)
 

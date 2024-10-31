@@ -17,7 +17,7 @@ TEXT_TURN_ID = 'typeofbookingddl'
 ERROR_ID = 'error-information-popup-container'
 TIMEOUT = 180
 SLEEP_EVERY_TAB = 0.3
-NOTE = 'Gentile sede consolare, solicito gentilmente un turno per iniciar el trámite de la ciudadanía italiana. Agradezco su atención y disposición para ayudarme en este proceso. Cordiali saluti, Mariano Andrés Salguero'
+NOTE = 'Richiedo gentilmente un appuntamento per avviare la pratica di cittadinanza italiana.'
 
 def start_process_day():
     service = Service.CHROME
