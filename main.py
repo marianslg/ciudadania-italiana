@@ -161,7 +161,6 @@ def process_seven(service: Service, execution_time, id):
 
         if otp is None:
             log.info('No se encontró código OTP en mail.')
-            time.sleep(1)
         else:
             log.info(f'Se encontró un nuevo código OTP!: {otp}')
             break
@@ -171,9 +170,13 @@ def process_seven(service: Service, execution_time, id):
     except Exception as e:
         pass
 
-    time.sleep(60)
+    time.sleep(3)
 
-    driver.save_screenshot(id, 'DESP_OTP')
+    driver.book()
+
+    for i in range(10):
+        time.sleep(5)
+        driver.save_screenshot(id, f'CALENDAR_{i}')
 
     time.sleep(60*10)
 

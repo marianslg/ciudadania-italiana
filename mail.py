@@ -29,8 +29,9 @@ def get_unseen_emails():
 
     yesterday = (datetime.now() - timedelta(days=1)).strftime('%d-%b-%Y')  
     today = (datetime.now()).strftime('%d-%b-%Y')
-
+    print(datetime.now(), 1)
     status, messages = mail.search(None, f'(FROM "noreply-prenotami@esteri.it" SINCE {today})')
+    print(datetime.now(), 2)
 
     mails = []
 
@@ -67,5 +68,8 @@ def get_unseen_emails():
                         body = msg.get_payload(decode=True).decode()
                         if body.startswith("OTP Code"):
                             mails.append(body)
-    
+    print(datetime.now(), 3)
+
     return mails
+
+print(get_OTP())

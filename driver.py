@@ -47,7 +47,7 @@ next_service = {
 class SeleniumDriver:
 
     @try_except
-    def __init__(self, timeout=60, show_logs=False, service=Service.CHROME, log = None):
+    def __init__(self, timeout=60, show_logs=False, service=Service.CHROME, log=None):
         if service == Service.CHROME:
             chrome_options = ChromeOptions()
             chrome_options.add_argument(
@@ -245,45 +245,45 @@ class SeleniumDriver:
     def change_tab(self, tab: int):
         self.driver.switch_to.window(self.driver.window_handles[tab])
 
-    
     def abrir_archivo(self, file_path):
         self.driver.get("file://" + file_path)  # Accede al archivo HTML local
 
     @try_except
     def complete_and_send_form(self, otp, note):
-        wait = WebDriverWait(self.driver, 60)
-
-        # self.log.info('Tipo Prenotazione')
-        # tipo_prenotazione = wait.until(
-        #     EC.presence_of_element_located((By.ID, 'typeofbookingddl')))
-        # tipo_prenotazione.click()
-        # # Selecciona la opción "Prenotazione Singola"
-        # tipo_prenotazione.send_keys(Keys.ARROW_DOWN)
-        # tipo_prenotazione.send_keys(Keys.RETURN)
-
-        time.sleep(0.5)
-
         self.log.info('Note per la sede')
 
         # Agrega una nota en "Note per la sede"
         note_field = self.driver.find_element(By.ID, 'BookingNotes')
         note_field.send_keys(note)
 
-        time.sleep(0.5)
         self.log.info('OTP')
 
         # Introduce el código OTP (si lo tienes)
         otp_input = self.driver.find_element(By.ID, 'otp-input')
         otp_input.send_keys(otp)  # Reemplaza con el código OTP real
-        time.sleep(0.5)
         self.log.info('Acepta la política de privacidad')
 
         # Acepta la política de privacidad
         privacy_checkbox = self.driver.find_element(By.ID, 'PrivacyCheck')
         privacy_checkbox.click()
-        time.sleep(0.5)
         self.log.info('Send!')
 
         # Envía el formulario
         submit_button = self.driver.find_element(By.ID, 'btnAvanti')
         submit_button.click()
+
+        alert = self.driver.switch_to.alert
+        alert.accept()
+
+    @try_except
+    def book(self):
+        # Actual: noviembre: target: luglio
+
+        for i in range(8):
+            self.log.info(f'[{i+1}/8] Waiting for button next')
+            next_month_button = WebDriverWait(self.driver, 20).until(
+                EC.element_to_be_clickable(
+                    (By.CSS_SELECTOR, '[data-action="next"]'))
+            )
+            next_month_button.click()
+            self.log.info(f'[{i+1}/8] NEXT click!')
