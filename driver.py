@@ -1,3 +1,4 @@
+from httpcore import TimeoutException
 from selenium import webdriver
 from dotenv import dotenv_values
 from selenium.webdriver.chrome.options import Options as ChromeOptions
@@ -56,8 +57,10 @@ class SeleniumDriver:
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--incognito")
+            chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])  # Añade esta línea para limitar los logs
+
             self.driver = webdriver.Chrome(
-                service=chrome_service, options=chrome_options)
+                service=chrome_service, options=chrome_options,)
 
             stealth(self.driver,
                     languages=["en-US", "en"],
@@ -280,10 +283,13 @@ class SeleniumDriver:
         # Actual: noviembre: target: luglio
 
         for i in range(8):
-            self.log.info(f'[{i+1}/8] Waiting for button next')
-            next_month_button = WebDriverWait(self.driver, 20).until(
-                EC.element_to_be_clickable(
-                    (By.CSS_SELECTOR, '[data-action="next"]'))
-            )
-            next_month_button.click()
-            self.log.info(f'[{i+1}/8] NEXT click!')
+            try:
+                self.log.info(f'[{i+1}/8] Waiting for button next')
+                next_month_button = WebDriverWait(self.driver, 120).until(
+                    EC.element_to_be_clickable(
+                        (By.CSS_SELECTOR, '[data-action="next"]'))
+                )
+                next_month_button.click()
+                self.log.info(f'[{i+1}/8] NEXT click!')
+            except TimeoutException:
+                self.log.info(f'[{i+1}/8] Timeout!')

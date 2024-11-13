@@ -7,6 +7,7 @@ from decorators import log, try_except
 from popup import showPopup
 from enum import Enum
 from mail import get_OTP
+import threading
 
 TRYES = 5
 PRENOTAME_USER_AREA_URL = 'https://prenotami.esteri.it/UserArea'
@@ -18,6 +19,8 @@ ERROR_ID = 'error-information-popup-container'
 TIMEOUT = 180
 SLEEP_EVERY_TAB = 0.3
 NOTE = 'Richiedo gentilmente un appuntamento per avviare la pratica di cittadinanza italiana.'
+
+otp_already_click = threading.Event()
 
 def start_process_day():
     service = Service.CHROME
@@ -34,11 +37,16 @@ def start_process_day():
         wait(10, 40)
 
 def get_time(hours, minutes, seconds):
+
+    if hours != 18 or minutes != 59 or seconds != 59:
+        print(f'------------------------- CUIDADO! HORA INCORRECTA -------------------------')
+    
+    print(f'HORA CONFIGURADA: {hours}:{minutes}:{seconds}')
     actual_time = datetime.now()
     return datetime.combine(actual_time.date(
         ), datetime.min.time()) + timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
-def start_process_7(num_processes = 5):
+def start_process_7(num_processes = 6):
     import multiprocessing
 
     # EDGE Tab: 1, Start: 2024-10-28 18:59:58.313707, Finish: 2024-10-28 19:01:24.057974 result: ERROR_CONNECTION_RESET
@@ -56,6 +64,7 @@ def start_process_7(num_processes = 5):
     try:
         processes = []
 
+        print(f'Se van a ejecutar {num_processes} procesos')
         target_datetime = get_time(18, 59, 59)
         # target_datetime = get_time(18, 54, 59)
 
@@ -65,12 +74,12 @@ def start_process_7(num_processes = 5):
             processes.append(p)
             p.start()
 
-            p2 = multiprocessing.Process(
-                target=process_seven, args=(Service.EDGE, target_datetime, i))
-            processes.append(p2)
-            p2.start()
+            # p2 = multiprocessing.Process(
+            #     target=process_seven, args=(Service.EDGE, target_datetime, i))
+            # processes.append(p2)
+            # p2.start()
 
-            target_datetime += timedelta(milliseconds=300)
+            target_datetime += timedelta(milliseconds=200)
 
         for p in processes:
             p.join()
@@ -112,16 +121,21 @@ class Log():
 
 @try_except
 def booking_turn_load(driver: SeleniumDriver):
+    print('otp_already_click', otp_already_click.is_set())
     while True:
         otp_button = driver.is_load()
 
         if otp_button is None:
             pass
-        elif isinstance(otp_button, str):   
+        elif isinstance(otp_button, str):
             return otp_button
         else:
-            otp_button.click()
-            return True
+            if not otp_already_click.is_set():
+                otp_button.click()
+                otp_already_click.set()
+                return True
+            else:
+                return 'OTP_ALREADY_CLICK'
 
     
 @try_except
@@ -130,6 +144,7 @@ def process_seven(service: Service, execution_time, id):
     id = f'{service.name}_{id}'
 
     log = Log(id)
+    print('otp_already_click', otp_already_click.is_set())
 
     driver = SeleniumDriver(TIMEOUT, service=service, log=log)
 
@@ -149,7 +164,8 @@ def process_seven(service: Service, execution_time, id):
 
     if(isinstance(result, str)):
         log.info(f'Booking Error: {result}')
-        # return
+        return
+    
     log.info('Booking OK. OTP enviado!')
 
     time.sleep(5)
@@ -268,6 +284,8 @@ class LoginResult(Enum):
 def login_and_go_to_service(driver: SeleniumDriver) -> LoginResult:
     try:
         driver.go_to_url(PRENOTAME_USER_AREA_URL)
+
+        time.sleep(3)
 
         if driver.need_login():
             time.sleep(2)

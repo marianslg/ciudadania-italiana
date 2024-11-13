@@ -17,7 +17,7 @@ def try_except(func):
         try:
             return func(*args, **kwargs)
         except Exception as e:
-            error= f"{func.__name__} type {e.__class__.__name__}: {str(e)[:200] + '...'}"
+            error= f"{func.__name__} type {str(e.__class__.__name__)}: {str(e)[:150] + '...'}"
             print(error)
             raise Exception(error)
     

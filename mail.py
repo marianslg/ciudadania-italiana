@@ -71,5 +71,3 @@ def get_unseen_emails():
     print(datetime.now(), 3)
 
     return mails
-
-print(get_OTP())
