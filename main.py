@@ -46,7 +46,7 @@ def get_time(hours, minutes, seconds):
     return datetime.combine(actual_time.date(
         ), datetime.min.time()) + timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
-def start_process_7(num_processes = 6):
+def start_process_7(num_processes = 5):
     import multiprocessing
 
     # EDGE Tab: 1, Start: 2024-10-28 18:59:58.313707, Finish: 2024-10-28 19:01:24.057974 result: ERROR_CONNECTION_RESET
@@ -295,7 +295,7 @@ def login_and_go_to_service(driver: SeleniumDriver) -> LoginResult:
 
         if (driver.is_unavailable()):
             return LoginResult.UNAVAILABLE
-
+        time.sleep(5)
         driver.click_services()
         driver.wait_for_load_fully()
         time.sleep(5)

@@ -1,5 +1,5 @@
 from httpcore import TimeoutException
-from selenium import webdriver
+from seleniumwire import webdriver
 from dotenv import dotenv_values
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.common.keys import Keys
@@ -57,7 +57,9 @@ class SeleniumDriver:
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--incognito")
-            chrome_options.add_experimental_option('excludeSwitches', ['enable-logging'])  # Añade esta línea para limitar los logs
+            # Añade esta línea para limitar los logs
+            chrome_options.add_experimental_option(
+                'excludeSwitches', ['enable-logging'])
 
             self.driver = webdriver.Chrome(
                 service=chrome_service, options=chrome_options,)
@@ -280,16 +282,71 @@ class SeleniumDriver:
 
     @try_except
     def book(self):
+        def intercept_request(request):
+            import json
+
+            print(f"intercept_request {request.url} {request.method}")
+
+            # Intercepta solo la solicitud del calendario
+            if "RetrieveCalendarAvailability" in request.url and request.method == "POST":
+                # Decodifica el cuerpo original
+                body = json.loads(request.body.decode('utf-8'))
+
+                # Modifica la fecha para ir al mes de agosto de 2025
+                body['selectedDay'] = "2025-08-04T22:01:32.730Z"
+
+                # Reemplaza el cuerpo con la nueva fecha
+                request.body = json.dumps(body)
+                print(f"Interceptado y modificado: {body}")
+
         # Actual: noviembre: target: luglio
 
-        for i in range(8):
-            try:
-                self.log.info(f'[{i+1}/8] Waiting for button next')
-                next_month_button = WebDriverWait(self.driver, 120).until(
-                    EC.element_to_be_clickable(
-                        (By.CSS_SELECTOR, '[data-action="next"]'))
-                )
-                next_month_button.click()
-                self.log.info(f'[{i+1}/8] NEXT click!')
-            except TimeoutException:
-                self.log.info(f'[{i+1}/8] Timeout!')
+        try:
+            self.driver.request_interceptor = intercept_request
+
+            self.log.info(f'Waiting for button next')
+            next_month_button = WebDriverWait(self.driver, 120).until(
+                EC.element_to_be_clickable(
+                    (By.CSS_SELECTOR, '[data-action="next"]'))
+            )
+            next_month_button.click()
+            self.log.info(f'NEXT click!')
+        except Exception as e:
+            print(e)
+            self.log.info('Error intercepting request')
+
+            # for i in range(8):
+            #     try:
+            #         self.log.info(f'[{i+1}/8] Waiting for button next')
+            #         next_month_button = WebDriverWait(self.driver, 120).until(
+            #             EC.element_to_be_clickable(
+            #                 (By.CSS_SELECTOR, '[data-action="next"]'))
+            #         )
+            #         next_month_button.click()
+            #         self.log.info(f'[{i+1}/8] NEXT click!')
+            #     except TimeoutException:
+            #         self.log.info(f'[{i+1}/8] Timeout!')
+
+        # # Obtiene la fecha actual
+        # fecha_actual = datetime.now()
+        # # Calcula la nueva fecha sumando los días
+        # nueva_fecha = fecha_actual + timedelta(days=dias)
+
+        # try:
+        #     self.log.info('clicking on the date')
+        #     elemento = self.driver.find_element(By.XPATH, '//td[@data-action="selectDay" and @data-day="23/07/2025"]')
+        #     elemento.click()
+        #     self.log.info('Clicked on the date')
+        # except Exception as e:
+        #     self.log.info('clicking on the date error')
+
+        # try:
+        #     sendPrenotaButton = WebDriverWait(self.driver, 120).until(
+        #         EC.element_to_be_clickable(
+        #             (By.ID, 'btnPrenotaNoOtp'))
+        #     )
+        #     sendPrenotaButton.click()
+        #     self.log.info('sendPrenotaButton click!')
+        # except Exception as e:
+        #     self.log.info('sendPrenotaButton error!')
+        #     print(e)
