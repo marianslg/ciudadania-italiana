@@ -1,5 +1,7 @@
 from httpcore import TimeoutException
+
 from seleniumwire import webdriver
+
 from dotenv import dotenv_values
 from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.common.keys import Keys
@@ -16,7 +18,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.edge.service import Service as EdgeService
 from enum import Enum
-from selenium import webdriver
+
 import time
 from datetime import datetime
 from selenium.webdriver.edge.options import Options as EdgeOptions
@@ -50,7 +52,7 @@ class SeleniumDriver:
     @try_except
     def __init__(self, timeout=60, show_logs=False, service=Service.CHROME, log=None):
         if service == Service.CHROME:
-            chrome_options = ChromeOptions()
+            chrome_options = webdriver.ChromeOptions()
             chrome_options.add_argument(
                 "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36")
             chrome_options.add_argument("--disable-gpu")
@@ -61,8 +63,12 @@ class SeleniumDriver:
             chrome_options.add_experimental_option(
                 'excludeSwitches', ['enable-logging'])
 
-            self.driver = webdriver.Chrome(
-                service=chrome_service, options=chrome_options,)
+            # self.driver = webdriver.Chrome(
+            #     service=chrome_service, options=chrome_options,)
+
+            self.driver = webdriver.Chrome(seleniumwire_options={
+                'auto_config': True
+            }, options=chrome_options)
 
             stealth(self.driver,
                     languages=["en-US", "en"],
@@ -72,26 +78,26 @@ class SeleniumDriver:
                     renderer="Intel Iris OpenGL Engine",
                     fix_hairline=True)
 
-        elif service == Service.FIREFOX:
-            self.driver = webdriver.Firefox(service=firefox_service)
-        elif service == Service.EDGE:
-            egde_options = EdgeOptions()
-            egde_options.add_argument(
-                "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36 Edg/117.0.2045.43")
-            egde_options.add_argument("--inprivate")
-            egde_options.add_argument("--disable-gpu")
-            egde_options.add_argument("--no-sandbox")
-            egde_options.add_argument("--disable-dev-shm-usage")
-            self.driver = webdriver.Edge(
-                service=edge_service, options=egde_options)
+        # elif service == Service.FIREFOX:
+        #     self.driver = webdriver.Firefox(service=firefox_service)
+        # elif service == Service.EDGE:
+        #     egde_options = EdgeOptions()
+        #     egde_options.add_argument(
+        #         "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/117.0.5938.132 Safari/537.36 Edg/117.0.2045.43")
+        #     egde_options.add_argument("--inprivate")
+        #     egde_options.add_argument("--disable-gpu")
+        #     egde_options.add_argument("--no-sandbox")
+        #     egde_options.add_argument("--disable-dev-shm-usage")
+        #     self.driver = webdriver.Edge(
+        #         service=edge_service, options=egde_options)
 
-            # stealth(self.driver,
-            #     languages=["en-US", "en"],
-            #     vendor="Google Inc.",
-            #     platform="Win32",
-            #     webgl_vendor="Intel Inc.",
-            #     renderer="Intel Iris OpenGL Engine",
-            #     fix_hairline=True)
+        #     # stealth(self.driver,
+        #     #     languages=["en-US", "en"],
+        #     #     vendor="Google Inc.",
+        #     #     platform="Win32",
+        #     #     webgl_vendor="Intel Inc.",
+        #     #     renderer="Intel Iris OpenGL Engine",
+        #     #     fix_hairline=True)
 
         # self.timeout = timeout
         self.show_logs: bool = show_logs
@@ -299,10 +305,34 @@ class SeleniumDriver:
                 request.body = json.dumps(body)
                 print(f"Interceptado y modificado: {body}")
 
+        def intercept_request2(request):
+            import json
+
+            if request.method == 'POST' and '/BookingCalendar/InsertNewBooking' in request.url:
+                if request.body:  # Verificar si el body existe
+                    try:
+                        # Decodificar el cuerpo como JSON
+                        body_data = json.loads(request.body.decode('utf-8'))
+                        print("Body original antes de modificar:", body_data)
+
+                        # Modificar el campo selectedDay
+                        # Cambia la fecha a la deseada
+                        body_data['selectedDay'] = "2025-08-08T22:01:32.730Z"
+
+                        # Actualizar el body de la solicitud
+                        request.body = json.dumps(body_data).encode('utf-8')
+                        # Asegurar encabezado correcto
+                        # request.headers['Content-Type'] = 'application/json'
+                        print("Body modificado:", body_data)
+                    except Exception as e:
+                        print("Error al procesar el body:", e)
+                else:
+                    print("No se encontró body en la solicitud.")
+
         # Actual: noviembre: target: luglio
 
         try:
-            self.driver.request_interceptor = intercept_request
+            self.driver.request_interceptor = intercept_request2
 
             self.log.info(f'Waiting for button next')
             next_month_button = WebDriverWait(self.driver, 120).until(
