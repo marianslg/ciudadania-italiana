@@ -2,3 +2,4 @@ python-dotenv
 selenium
 pandas
 selenium-stealth
+selenium-wire

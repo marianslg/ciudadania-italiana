@@ -290,49 +290,30 @@ class SeleniumDriver:
     def book(self):
         def intercept_request(request):
             import json
-
-            print(f"intercept_request {request.url} {request.method}")
-
-            # Intercepta solo la solicitud del calendario
-            if "RetrieveCalendarAvailability" in request.url and request.method == "POST":
-                # Decodifica el cuerpo original
-                body = json.loads(request.body.decode('utf-8'))
-
-                # Modifica la fecha para ir al mes de agosto de 2025
-                body['selectedDay'] = "2025-08-04T22:01:32.730Z"
-
-                # Reemplaza el cuerpo con la nueva fecha
-                request.body = json.dumps(body)
-                print(f"Interceptado y modificado: {body}")
-
-        def intercept_request2(request):
-            import json
-
-            if request.method == 'POST' and '/BookingCalendar/InsertNewBooking' in request.url:
-                if request.body:  # Verificar si el body existe
+            print("Entro en intercept_request")
+            if request.method == 'POST' and 'RetrieveCalendarAvailability' in request.url:
+                if request.body:
                     try:
-                        # Decodificar el cuerpo como JSON
                         body_data = json.loads(request.body.decode('utf-8'))
                         print("Body original antes de modificar:", body_data)
 
-                        # Modificar el campo selectedDay
-                        # Cambia la fecha a la deseada
-                        body_data['selectedDay'] = "2025-08-08T22:01:32.730Z"
+                        body_data['selectedDay'] = "2025-08-12T22:01:32.730Z"
 
-                        # Actualizar el body de la solicitud
                         request.body = json.dumps(body_data).encode('utf-8')
-                        # Asegurar encabezado correcto
-                        # request.headers['Content-Type'] = 'application/json'
+
                         print("Body modificado:", body_data)
                     except Exception as e:
                         print("Error al procesar el body:", e)
                 else:
                     print("No se encontró body en la solicitud.")
+            else:
+                print(f"No se encontró body en la solicitud: {request.method} {request.url}")
+            print("Salgo de intercept_request")
 
         # Actual: noviembre: target: luglio
 
         try:
-            self.driver.request_interceptor = intercept_request2
+            self.driver.request_interceptor = intercept_request
 
             self.log.info(f'Waiting for button next')
             next_month_button = WebDriverWait(self.driver, 120).until(

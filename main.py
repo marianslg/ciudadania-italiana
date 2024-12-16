@@ -22,6 +22,7 @@ NOTE = 'Richiedo gentilmente un appuntamento per avviare la pratica di cittadina
 
 otp_already_click = threading.Event()
 
+
 def start_process_day():
     service = Service.CHROME
     while True:
@@ -36,17 +37,20 @@ def start_process_day():
 
         wait(10, 40)
 
+
 def get_time(hours, minutes, seconds):
 
     if hours != 18 or minutes != 59 or seconds != 59:
-        print(f'------------------------- CUIDADO! HORA INCORRECTA -------------------------')
-    
+        print(
+            f'------------------------- CUIDADO! HORA INCORRECTA -------------------------')
+
     print(f'HORA CONFIGURADA: {hours}:{minutes}:{seconds}')
     actual_time = datetime.now()
     return datetime.combine(actual_time.date(
-        ), datetime.min.time()) + timedelta(hours=hours, minutes=minutes, seconds=seconds)
+    ), datetime.min.time()) + timedelta(hours=hours, minutes=minutes, seconds=seconds)
 
-def start_process_7(num_processes = 5):
+
+def start_process_7(num_processes=5):
     import multiprocessing
 
     # EDGE Tab: 1, Start: 2024-10-28 18:59:58.313707, Finish: 2024-10-28 19:01:24.057974 result: ERROR_CONNECTION_RESET
@@ -115,13 +119,18 @@ def ___start_process_7():
 class Log():
     def __init__(self, id):
         self.id = id
-    
+
     def info(self, text):
         print(f'{datetime.now()} - {self.id}: {text}')
 
+
 @try_except
 def booking_turn_load(driver: SeleniumDriver):
-    print('otp_already_click', otp_already_click.is_set())
+    try:
+        driver.log.info('otp_already_click', otp_already_click.is_set())
+    except:
+        pass
+
     while True:
         otp_button = driver.is_load()
 
@@ -130,14 +139,32 @@ def booking_turn_load(driver: SeleniumDriver):
         elif isinstance(otp_button, str):
             return otp_button
         else:
+            try:
+                driver.log.info('otp_already_click',
+                                otp_already_click.is_set())
+            except:
+                pass
+
             if not otp_already_click.is_set():
-                otp_button.click()
                 otp_already_click.set()
+                otp_button.click()
+
+                try:
+                    driver.log.info('TRUE!!!')
+                except:
+                    pass
+
                 return True
+
             else:
+                try:
+                    driver.log.info('OTP_ALREADY_CLICK!!!')
+                except:
+                    pass
+
                 return 'OTP_ALREADY_CLICK'
 
-    
+
 @try_except
 def process_seven(service: Service, execution_time, id):
     # id = f'{datetime.now().strftime('%Y_%m_%d_%H_%M_%S')}___{service.name}_{id}___'
@@ -154,6 +181,8 @@ def process_seven(service: Service, execution_time, id):
 
     sleep_until(execution_time)
 
+    
+
     log.info(f'Execution programming: {execution_time}. Execution date: {datetime.now()}')
 
     driver.go_to_url(PRENOTAME_BOOKING_URL)
@@ -162,10 +191,12 @@ def process_seven(service: Service, execution_time, id):
 
     result = booking_turn_load(driver)
 
-    if(isinstance(result, str)):
+    if (isinstance(result, str)):
         log.info(f'Booking Error: {result}')
         return
-    
+    else:
+        log.info(f'Booking OK!: {result}')
+
     log.info('Booking OK. OTP enviado!')
 
     time.sleep(5)
@@ -180,7 +211,7 @@ def process_seven(service: Service, execution_time, id):
         else:
             log.info(f'Se encontró un nuevo código OTP!: {otp}')
             break
-    
+
     try:
         driver.complete_and_send_form(otp, NOTE)
     except Exception as e:
@@ -195,8 +226,6 @@ def process_seven(service: Service, execution_time, id):
         driver.save_screenshot(id, f'CALENDAR_{i}')
 
     time.sleep(60*10)
-
-
 
     # driver.click_prenota()
 
@@ -225,8 +254,6 @@ def process_seven(service: Service, execution_time, id):
     #         break
 
     # print_execution(service.name, executions)
-
-
 
     # for i in range(6*10):
     #     for e in range(1, TRYES+1):
