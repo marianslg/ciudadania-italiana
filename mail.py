@@ -3,11 +3,11 @@ import email
 from email.header import decode_header
 import time
 from dotenv import dotenv_values
-from decorators import try_except
+# from decorators import try_except
 
 IMAP_SERVER = 'imap.gmail.com'
 
-@try_except
+# @try_except
 def get_OTP():
     mails = get_unseen_emails()
     for mail in mails:
@@ -16,7 +16,7 @@ def get_OTP():
     
     return None
 
-@try_except
+# @try_except
 def get_unseen_emails():
     from datetime import datetime, timedelta
  

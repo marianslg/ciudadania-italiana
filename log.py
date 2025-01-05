@@ -1,50 +1,23 @@
-from decorators import create_folder, create_folder_if_not_exists
-import pandas as pd
+from datetime import datetime
+import inspect
 
-LOG_FOLDER = 'logs'
-LOG_FILE = f'{LOG_FOLDER}/log.txt'
-RESULT_FILE = f'{LOG_FOLDER}/result.csv'
+class Log:
+    def __init__(self, name):
+        self.name = name
+        self.path = f'logs/{datetime.now()} {name}.log'
 
+    def info(self, message):
+        stack = inspect.stack()
+        message = f'{datetime.now()} [{self.name}] [{stack[1].function}]: {message}'
+        print(message)
+        self.__write(message)
 
-@create_folder(LOG_FOLDER)
-def save_log(message):
-    from datetime import datetime
+    def error(self, message):
+        stack = inspect.stack()
+        message = f'{datetime.now()} [{self.name}] [{stack[1].function}]: ERROR {message}'
+        print(message)
+        self.__write(message)
 
-    current_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-    message = f"{current_time} - {message}"
-
-    # print(message)
-
-    create_folder_if_not_exists('logs')
-
-    with open(LOG_FILE, 'a') as file:
-        file.write(f"{message}\n")
-
-
-def save_file(file_name, content):
-    with open(file_name, 'w') as file:
-        file.write(content)
-
-
-@create_folder(LOG_FOLDER)
-def save_result_operation(date, hour, result, service):
-    with open(RESULT_FILE, 'a') as file:
-        file.write(f"{date},{hour},{result},{service}\n")
-
-
-def get_result_operation():
-    # Cargar los datos desde el CSV
-    df = pd.read_csv(RESULT_FILE, header=None)
-
-    # Asignar nombres a las columnas manualmente
-    df.columns = ["fecha", "hora","resultado","service"]
-
-    # Contar cantidad total de resultados
-    cantidad_total = len(df)
-
-    # Obtener la última fecha y hora registrada
-    ultima_fila = df.iloc[-1]
-    ultima_fecha = ultima_fila["fecha"]
-    ultima_hora = ultima_fila["hora"]
-
-    return f'TOTAL: {cantidad_total}. OK: {df[df["resultado"] == "OK"].shape[0]}. NO_TURNS: {df[df["resultado"] == "NO_TURNS"].shape[0]}. TIMEOUT: {df[df["resultado"] == "TIMEOUT"].shape[0]}. UNKNOWN: {df[df["resultado"] == "UNKNOWN"].shape[0]}. EXC: {df[df["resultado"] == "EXC"].shape[0]} Última fecha: {ultima_fecha} {ultima_hora}'
+    def __write(self, message):
+        with open(self.path, 'a') as f:
+            f.write(message + '\n')
